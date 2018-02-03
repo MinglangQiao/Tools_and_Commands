@@ -15,4 +15,5 @@ exit
 
 # file transfer
 scp /media/ml/all_video_restore/* user@IP:/home/Downloads
+
 scp -r 目录名 user@IP:/home/Downloads
