@@ -12,3 +12,6 @@ ssh username@192.168.1.103
 
 # disconnect
 exit
+
+# file transfer
+scp /media/ml/all_video_restore/* user@IP:/home/Downloads
