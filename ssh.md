@@ -2,7 +2,7 @@
 sudo apt-get install openssh-server
 
 # check if start
-sudo ps -e |grep ssh # 
+sudo ps -e |grep ssh 
 
 # start
 sudo service ssh start
