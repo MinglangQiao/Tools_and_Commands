@@ -34,5 +34,21 @@ git remote add origin git@github.com:git_username/repository_name.git
 git remote remove origin
 
 ```
+# 版本回退
+
+HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令：
+```
+git reset --hard commit_id。
+```
+穿梭前，用：～可以查看提交历史，以便确定要回退到哪个版本。
+```
+git log
+```
+
+
+要重返未来，用：～查看命令历史，以便确定要回到未来的哪个版本。
+```
+git reflog
+```
 
 
