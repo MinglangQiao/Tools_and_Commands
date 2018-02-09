@@ -50,5 +50,5 @@ git log
 ```
 git reflog
 ```
-
+退出git log 状态按 ： Q
 
