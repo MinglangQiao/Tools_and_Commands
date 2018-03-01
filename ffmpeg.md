@@ -40,3 +40,9 @@ def from_image_to_video(self):
             
 ```
 
+### 视频转图片
+
+```
+ffmpeg -i path_of_input.mp4 path_of_output%03d.png
+```
+
