@@ -21,6 +21,15 @@ git fetch origin branch1
 git merge origin/master
 
 ```
+git pull命令的作用是：取回远程主机某个分支的更新，再与本地的指定分支合并，它的完整格式稍稍有点复杂
+```
+git pull <远程主机名> <远程分支名>:<本地分支名>
+```
+
+比如，要取回origin主机的next分支，与本地的master分支合并，需要写成下面这样 -
+```
+git pull origin next:master
+```
 
 ## remote 的添加与删除
 
