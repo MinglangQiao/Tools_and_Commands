@@ -34,3 +34,41 @@ http://python.jobbole.com/87522/
 ##### 设置Anaconda镜像
 http://python.jobbole.com/86236/
 
+### Conda的环境管理
+
+##### 创建虚拟环境
+```
+conda create -n env_name  list of packages
+
+# 安装好后，使用activate激活某个环境
+source activate env_name
+
+# 退出虚拟环境
+source deactivate env_name
+
+# 删除一个已有的环境
+conda env remove -n env_name
+
+# 查看已安装的环境
+conda info -e
+
+ ```
+ 
+ ### Conda的包管理
+ 
+ ####
+ ```
+# 安装scipy
+conda install scipy
+
+# 查看当前环境下已安装的包
+conda list
+
+# 查看某个指定环境的已安装包
+conda list -n env_name
+
+# 安装package
+conda install -n python34 numpy
+
+ ```
+
