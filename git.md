@@ -33,7 +33,7 @@ git pull origin next:master
 
 ## remote 的添加与删除
 
-# 在本地目录下关联远程repository ：
+### 在本地目录下关联远程repository ：
 #### 每个仓库下都有一个默认的origin 不用再添加origin， 先用git remote -v 查看一下
 ```
 git remote add origin git@github.com:git_username/repository_name.git
@@ -43,7 +43,7 @@ git remote add origin git@github.com:git_username/repository_name.git
 git remote remove origin
 
 ```
-# 版本回退
+### 版本回退
 
 HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令：
 ```
