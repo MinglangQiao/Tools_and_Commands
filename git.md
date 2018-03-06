@@ -61,3 +61,9 @@ git reflog
 ```
 退出git log 状态按 ： Q
 
+
+
+## 快进式推送(FastForwards)与非快进式推送(NonFastForwards)
+
+简介：http://blog.csdn.net/u010506504/article/details/43965627
+
