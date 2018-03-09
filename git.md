@@ -11,6 +11,7 @@ https://gaohaoyang.github.io/2015/04/12/Syncing-a-fork/
 
 
 ## 更新远程仓库到本地
+直接pull不行时先fetch， 再merge， 在merge时解决冲突
 ```
 # 拉取更新
 
@@ -67,3 +68,7 @@ git reflog
 
 简介：http://blog.csdn.net/u010506504/article/details/43965627
 
+
+## 解决冲突
+
+https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375840202368c74be33fbd884e71b570f2cc3c0d1dcf000
