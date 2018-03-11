@@ -146,7 +146,8 @@ and see
 
 ## install cuDNN
 first， go to the [official site](https://developer.nvidia.com/cudnn)to download the cudnn, register required
-<img src=https://github.com/MinglangQiao/Tools_and_Scripts/raw/master/images/Environment/download_cudnn.png width="900" >
+
+<img src=https://github.com/MinglangQiao/Tools_and_Scripts/raw/master/images/Environment/download_cuDNN.png width="900" >
 
 upzip the file, and cd进入cudnn解压之后的include目录
 ```
