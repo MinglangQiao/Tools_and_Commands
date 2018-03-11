@@ -154,6 +154,6 @@ sudo cp cudnn.h /usr/local/cuda/include/    #复制头文件
 ```
 cd进入lib64目录下的动态文件进行复制和链接：
 ```
-sudo cp -a libcudnn* /usr/local/cuda/lib64/    #复制动态链接库
+sudo cp -a libcudnn* /usr/local/cuda/lib64/    #复制动态链接库，-a 在保留原文件属性的前提下复制文件
 
 ```
