@@ -77,7 +77,8 @@ conda install -n python34 numpy
 ## CUDA
 * [CUDA是什么鬼？](https://baike.baidu.com/item/CUDA/1186262?fr=aladdin)
   [PPA是什么鬼？](http://blog.csdn.net/baidu_22502417/article/details/46683549)
-  [参考教程](http://blog.csdn.net/autocyz/article/details/52299889/)
+  [参考教程1](http://blog.csdn.net/autocyz/article/details/52299889/)
+  [参考教程2](http://blog.csdn.net/u010837794/article/details/63251725)
   
 * First Install nvidia driver：
 go to the [official sit](http://www.nvidia.com/Download/index.aspx?lang=en-us) to query your graphics driver version number, eg: 390
@@ -133,7 +134,6 @@ sudo ldconfig      #使链接生效
 
 ```
 
-
 test cuda saples
 ```
 cd /usr/local/cuda-8.0/samples/1_Utilities/deviceQuery
@@ -144,5 +144,16 @@ and see
 
 <img src=https://github.com/MinglangQiao/Tools_and_Scripts/raw/master/images/Environment/install_cuda_succeed.png width="900" >
 
+## install cuDNN
+first， go to the [official site](https://developer.nvidia.com/cudnn)to download the cudnn, register required
+<img src=https://github.com/MinglangQiao/Tools_and_Scripts/raw/master/images/Environment/download_cudnn.png width="900" >
 
+upzip the file, and cd进入cudnn解压之后的include目录
+```
+sudo cp cudnn.h /usr/local/cuda/include/    #复制头文件
+```
+cd进入lib64目录下的动态文件进行复制和链接：
+```
+sudo cp -a libcudnn* /usr/local/cuda/lib64/    #复制动态链接库
 
+```
