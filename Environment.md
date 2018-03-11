@@ -1,3 +1,5 @@
+## Anaconda
+
 ### 官网
 [Anaconda](https://www.anaconda.com/download/#linux)
 
@@ -71,4 +73,32 @@ conda list -n env_name
 conda install -n python34 numpy
 
  ```
+
+## CUDA
+* [CUDA是什么鬼？](https://baike.baidu.com/item/CUDA/1186262?fr=aladdin)
+  [PPA是什么鬼？](http://blog.csdn.net/baidu_22502417/article/details/46683549)
+  [参考教程](http://blog.csdn.net/u010837794/article/details/63251725)
+  
+* First Install nvidia driver
+go to the [offical sit](http://www.nvidia.com/Download/index.aspx?lang=en-us) to query your graphics driver version number, eg: 390
+
+then
+```
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt-get update
+sudo apt-get install nvidia-390(change to your version number)
+sudo apt-get install mesa-common-dev
+sudo apt-get install freeglut3-dev
+```
+
+then reboot 
+```
+sudo reboot
+```
+
+check
+```
+nvidia-smi 
+```
+
 
