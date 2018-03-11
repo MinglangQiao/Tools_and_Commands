@@ -100,5 +100,26 @@ check
 ```
 nvidia-smi 
 ```
+* install cuda 
+first download cuda from [cuda8 offical site](https://developer.nvidia.com/cuda-toolkit-archive), recommend the .sh file
+
+then
+
+```
+# don't need to install the NDIA Accelerated Graphics Driver, others use the default
+sudo sh cuda_8.0.27_linux.run
+
+```
+
+next
+```
+sudo gedit /etc/profile
+
+# add the following in the last row, without blank row
+export PATH=/usr/local/cuda-8.0/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64$LD_LIBRARY_PATH
+
+```
+
 
 
