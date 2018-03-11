@@ -77,7 +77,7 @@ conda install -n python34 numpy
 ## CUDA
 * [CUDA是什么鬼？](https://baike.baidu.com/item/CUDA/1186262?fr=aladdin)
   [PPA是什么鬼？](http://blog.csdn.net/baidu_22502417/article/details/46683549)
-  [参考教程](http://blog.csdn.net/u010837794/article/details/63251725)
+  [参考教程](http://blog.csdn.net/autocyz/article/details/52299889/)
   
 * First Install nvidia driver：
 go to the [official sit](http://www.nvidia.com/Download/index.aspx?lang=en-us) to query your graphics driver version number, eg: 390
