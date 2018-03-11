@@ -103,6 +103,12 @@ nvidia-smi
 * install cuda 
 first download cuda from [cuda8 offical site](https://developer.nvidia.com/cuda-toolkit-archive), recommend the .sh file
 
+<div style="align: center">
+ 
+<img src=https://github.com/MinglangQiao/Tools_and_Scripts/raw/master/images/Environment/CUDA_Dowload.png width="600" >
+
+</div>
+
 then
 
 ```
@@ -110,6 +116,9 @@ then
 sudo sh cuda_8.0.27_linux.run
 
 ```
+as the result
+
+<img src=https://github.com/MinglangQiao/Tools_and_Scripts/raw/master/images/Environment/install_cuda_sh.png width="900" >
 
 next
 ```
@@ -119,7 +128,21 @@ sudo gedit /etc/profile
 export PATH=/usr/local/cuda-8.0/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64$LD_LIBRARY_PATH
 
+# ldconfig
+sudo ldconfig      #使链接生效 
+
 ```
+
+
+test cuda saples
+```
+cd /usr/local/cuda-8.0/samples/1_Utilities/deviceQuery
+sudo make
+./deviceQuery
+```
+and see
+
+<img src=https://github.com/MinglangQiao/Tools_and_Scripts/raw/master/images/Environment/install_cuda_succeed.png width="900" >
 
 
 
