@@ -6,3 +6,6 @@
 whereis python ## 查看python位置
 ```
 然后参考：[解决办法](https://blog.csdn.net/u012322855/article/details/78991559?%3E)
+
+2、[pycharm主题](http://profeel.github.io/2016/05/18/Pycharm%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE/)
+
