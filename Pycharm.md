@@ -11,3 +11,5 @@ whereis python ## 查看python位置
 
 3、[关闭拼写检查](https://blog.csdn.net/langzi7758521/article/details/50997072)
 
+4、[进入虚拟环境](https://blog.csdn.net/liangyihuai/article/details/77842628)
+
