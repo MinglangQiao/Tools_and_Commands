@@ -13,3 +13,5 @@ whereis python ## 查看python位置
 
 4、[进入虚拟环境](https://blog.csdn.net/liangyihuai/article/details/77842628)
 
+5、[不能导入cv2, 先找到cv2的路径](https://blog.csdn.net/heroacool/article/details/50967281)
+
