@@ -1,3 +1,6 @@
+### 安装Opencv，编译源码方式
+[参考资料](https://blog.csdn.net/lgh0824/article/details/78487234)
+
 1、安装依赖
 ```
 # 安装编译工具
@@ -62,4 +65,18 @@ python
 >>> import cv2
 >>> cv2.__version__
 '2.4.13'
+```
+
+### 卸载opencv
+```
+cd 进入release文件夹
+
+sudo make uninstall
+
+cd ..
+
+sudo rm -r release
+
+sudo rm -r /usr/local/include/opencv2 /usr/local/include/opencv /usr/include/opencv /usr/include/opencv2 /usr/local/share/opencv /usr/local/share/OpenCV /usr/share/opencv /usr/share/OpenCV /usr/local/bin/opencv* /usr/local/lib/libopencv
+
 ```
