@@ -18,4 +18,5 @@ pip install tensorflow-gpu==1.4
 
 ### 报错 could not find cudnnCreate in cudnn DSO， 注意查看报错信息
 [解决： 把cudnn 版本恢复到V5.1, 对应自己的cuda 版本](https://github.com/tensorflow/tensorflow/issues/722)
+
 [怎样改cudnn版本](https://blog.csdn.net/l297969586/article/details/67632608)
