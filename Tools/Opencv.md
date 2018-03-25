@@ -71,7 +71,7 @@ sudo updatedb
 python
 
 >>> import cv2
->>> cv2.__version__
+
 '2.4.13'
 ```
 
@@ -80,9 +80,5 @@ python
 ```
 ## 使用清华镜像
 pip install opencv-python  -i https://pypi.tuna.tsinghua.edu.cn/simple
-```
-
-```
-pip install xxx.whl
 ```
 
