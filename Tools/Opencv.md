@@ -1,3 +1,10 @@
+## 通过pip和清华镜像安装，超快
+```
+pip install opencv-python  -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+
+## 源码安装
 1、安装依赖
 ```
 # 安装编译工具
