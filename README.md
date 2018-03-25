@@ -158,3 +158,5 @@ cd进入解压后的lib64目录下的动态文件进行复制和链接：
 sudo cp -a libcudnn* /usr/local/cuda-8.0/lib64/    #复制动态链接库，-a 在保留原文件属性的前提下复制文件
 
 ```
+
+[更改cudnn版本](https://blog.csdn.net/l297969586/article/details/67632608)
