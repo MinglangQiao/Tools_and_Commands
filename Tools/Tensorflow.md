@@ -1,8 +1,8 @@
-## 最快最简单的办法，用清华镜像， [安装网址](https://mirrors.tuna.tsinghua.edu.cn/help/tensorflow/)，选择版本，一键安装
+## 最快最简单的办法，20+ M/S, 用清华镜像， [安装网址](https://mirrors.tuna.tsinghua.edu.cn/help/tensorflow/)，选择版本，一键安装
 ```
 pip install \
   -i https://pypi.tuna.tsinghua.edu.cn/simple/ \
-  https://mirrors.tuna.tsinghua.edu.cn/tensorflow/linux/gpu/tensorflow_gpu-1.4.0-cp35-cp35m-linux_x86_64.whl
+  https://mirrors.tuna.tsinghua.edu.cn/tensorflow/linux/gpu/tensorflow_gpu-1.0.0-cp35-cp35m-linux_x86_64.whl
 ```
 
 0、选择支持cuda 8.0的版本， 否者报错，
