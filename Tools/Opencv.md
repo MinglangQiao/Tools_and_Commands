@@ -23,6 +23,16 @@ cd release
 # 注意 .. 不能省略
 cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
 
+如果报错：
+CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+Please set them or make sure they are set and tested correctly in the CMake files:
+CUDA_nvcuvid_LIBRARY (ADVANCED)
+    linked by target "opencv_cudacodec" in directory /home/ml/下载/opencv-3.0.0/modules/cudacodec
+
+解决办法：
+未完待续
+
+
 # j4表示开4个线程来进行编译
 make -j4   
 
