@@ -74,3 +74,9 @@ python
 >>> cv2.__version__
 '2.4.13'
 ```
+
+### pip， anaconda方式安装
+[参考](https://blog.csdn.net/mark199345/article/details/53342866)
+```
+pip install opencv-python
+```
