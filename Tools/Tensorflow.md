@@ -5,7 +5,7 @@ pip install \
   https://mirrors.tuna.tsinghua.edu.cn/tensorflow/linux/gpu/tensorflow_gpu-1.0.0-cp35-cp35m-linux_x86_64.whl
 ```
 
-0、选择支持cuda 8.0的版本， 否者报错，
+0、选择支持cuda 8.0的tensorflow版本， 否者报错，
 ImportError: libcublas.so.9.0 [解决办法](https://blog.csdn.net/w5688414/article/details/79187499)
 ```
 pip install tensorflow-gpu==1.4  
@@ -16,6 +16,6 @@ pip install tensorflow-gpu==1.4
 
 2、[ReadTimeoutError报错](https://www.cnblogs.com/xuchenCN/p/5888648.html)
 
-3、### 报错 could not find cudnnCreate in cudnn DSO， 注意查看报错信息
+### 报错 could not find cudnnCreate in cudnn DSO， 注意查看报错信息
 [解决： 把cudnn 版本恢复到V5.1, 对应自己的cuda 版本](https://github.com/tensorflow/tensorflow/issues/722)
 [怎样改cudnn版本](https://blog.csdn.net/l297969586/article/details/67632608)
