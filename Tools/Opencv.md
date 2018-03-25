@@ -80,3 +80,10 @@ python
 ```
 pip install opencv-python
 ```
+如果速度太慢：
+去[here](https://www.lfd.uci.edu/~gohlke/pythonlibs/#opencv) dowload
+then
+```
+pip install xxx.whl
+```
+
