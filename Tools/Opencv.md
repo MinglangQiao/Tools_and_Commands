@@ -78,11 +78,10 @@ python
 ### pip， anaconda方式安装
 [参考](https://blog.csdn.net/mark199345/article/details/53342866)
 ```
-pip install opencv-python
+## 使用清华镜像
+pip install opencv-python  -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
-如果速度太慢：
-去[here](https://www.lfd.uci.edu/~gohlke/pythonlibs/#opencv) dowload
-then
+
 ```
 pip install xxx.whl
 ```
