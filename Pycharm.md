@@ -18,4 +18,5 @@ whereis python ## 查看python位置
 
 ## Debug
 [Debug按钮的用法](https://www.jianshu.com/p/64a45714c58c)
+[官方文档](https://www.jetbrains.com/help/pycharm/jumping-to-cursor.html)
 
