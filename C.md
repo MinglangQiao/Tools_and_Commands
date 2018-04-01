@@ -76,7 +76,8 @@ Hello from thread 8
 
 传入多个参数
 [参考资料](https://blog.csdn.net/computerme/article/details/52421928)
-[->什么鬼](https://blog.csdn.net/littesss/article/details/71185916)
+
+[->是什么鬼](https://blog.csdn.net/littesss/article/details/71185916)
 
 
 ``` c
