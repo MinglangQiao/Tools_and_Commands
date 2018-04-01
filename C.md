@@ -5,7 +5,7 @@
 
 
 ## c语言下多线程
-[thread_reat参考资料](https://baike.baidu.com/item/pthread_create)
+[thread_creat参考资料](https://baike.baidu.com/item/pthread_create)
 
 [官方资料](http://man7.org/linux/man-pages/man3/pthread_create.3.html)
 
