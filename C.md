@@ -6,7 +6,7 @@
 ## c语言下多线程
 [thread_reat参考资料](https://baike.baidu.com/item/pthread_create)
 
-``` 
+``` c
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
