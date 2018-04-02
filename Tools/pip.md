@@ -3,3 +3,13 @@
 ```
 pip install opencv-python  -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
+
+2、生成和安装requirements.txt
+```
+# 生成requirements.txt文件
+pip freeze > requirements.txt
+
+# 安装requirements.txt依赖
+pip install -r requirements.txt
+
+```
