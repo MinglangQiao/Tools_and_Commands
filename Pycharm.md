@@ -39,6 +39,8 @@ Root path 是远程服务器的工作路径
  
  选择解释器为远程的解释器， 通过Remote host查看远程主机上的文件
 
+[官方教程](https://www.jetbrains.com/help/pycharm/creating-a-remote-server-configuration.html)
+
 ### 1. 通过Tools > Deployment > Configuration配置远程主机IP、Rootpath; 然后mapping设置本地文件夹（最末不加“/”）
 
 ### 2、 通过settings > Projetc Interpreter > Project Interpreter > 小齿轮 > add > SSH Interpreter > 配置远程服务器的解释器
