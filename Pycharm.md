@@ -30,6 +30,6 @@ Jumping to Cursor：If one would like to re-debug starting from a particular lin
 
 [远程调试教程](https://blog.csdn.net/ll641058431/article/details/53049453)
 
-root path 是远程服务器的工作路径
+Root path 是远程服务器的工作路径
 
 <img src=https://github.com/MinglangQiao/Tools_and_Scripts/raw/master/images/Tools/pycharm_server.png width="600" >
