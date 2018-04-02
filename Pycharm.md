@@ -48,7 +48,7 @@ Root path 是远程服务器的工作路径
 如果你想看到更多的文件，就把root path 变短一点，比如， root path为/home/s/ml，  Deployment path为/DIEM时可以看到
 <img src=https://github.com/MinglangQiao/Tools_and_Scripts/raw/master/images/Tools/pycharm_rootpath.png >
 
-
+### 1.5 [Specifying user credentials defined during registration on the host](https://www.jetbrains.com/help/pycharm/creating-a-remote-server-configuration.html)
 
 ### 2、 通过settings > Projetc Interpreter > Project Interpreter > 小齿轮 > add > SSH Interpreter > 配置远程服务器的解释器
 
