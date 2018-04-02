@@ -46,7 +46,7 @@ Root path 是远程服务器的工作路径
 <img src=https://github.com/MinglangQiao/Tools_and_Scripts/raw/master/images/Tools/pycharm_path.png width="900" >
 
 如果你想看到更多的文件，就把root path 变短一点，比如， root path为/home/s/ml，  Deployment path为/DIEM时可以看到
-<img src=https://github.com/MinglangQiao/Tools_and_Scripts/raw/master/images/Tools/pycharm_rootpath.png width="500" >
+<img src=https://github.com/MinglangQiao/Tools_and_Scripts/raw/master/images/Tools/pycharm_rootpath.png >
 
 
 
