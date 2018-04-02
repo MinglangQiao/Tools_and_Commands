@@ -34,4 +34,18 @@ Root path 是远程服务器的工作路径
 
 <img src=https://github.com/MinglangQiao/Tools_and_Scripts/raw/master/images/Tools/pycharm_server.png width="600" >
 
+
  Web path 的设置，应该是用来配置网页上查看文件的服务，可以无视
+ 
+ 选择解释器为远程的解释器， 通过Remote host查看远程主机上的文件
+
+### 1. 通过Tools > Deployment > Configuration配置远程主机IP、Rootpath; 然后mapping设置本地文件夹（最末不加“/”）
+
+### 2、 通过settings > Projetc Interpreter > Project Interpreter > 小齿轮 > add > SSH Interpreter > 配置远程服务器的解释器
+
+### 3、通过Tools > Deployment > Browst Remote Host 查看远程的文件， 点击文件并编辑， upload; 通过Tools > Deployment > Upload to 和download from 上传和下载文件
+
+ 
+
+ 
+ 
