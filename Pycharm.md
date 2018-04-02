@@ -25,6 +25,7 @@ whereis python ## 查看python位置
 
 Jumping to Cursor：If one would like to re-debug starting from a particular line, even if this line is located "up-stream", PyCharm provides such a possibility. Thus one will avoid the necessity to finalize debugging prior to re-debug
 
-
+## 怎样申请专业版和远程连服务器调试代码
+[教程](http://www.pythontip.com/blog/post/13119/)
 
 
