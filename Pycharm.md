@@ -45,7 +45,6 @@ Root path 是远程服务器的工作路径
 
 ### 3、通过Tools > Deployment > Browst Remote Host 查看远程的文件， 点击文件并编辑， upload; 通过Tools > Deployment > Upload to 和download from 上传和下载文件
 
- 
 
  
  
