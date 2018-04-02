@@ -50,7 +50,7 @@ Root path 是远程服务器的工作路径
 
 ### 1.5 [Specifying user credentials defined during registration on the host](https://www.jetbrains.com/help/pycharm/creating-a-remote-server-configuration.html)
 
-### 2、 通过settings > Projetc Interpreter > Project Interpreter > 小齿轮 > add > SSH Interpreter > 配置远程服务器的解释器
+### 2、 通过settings > Projetc Interpreter > Project Interpreter > 小齿轮 > add remote(2018.1版本没有这个选项， BUG， 换成2017的就有了) > SSH Interpreter > 配置远程服务器的解释器
 
 ### 3、通过Tools > Deployment > Browst Remote Host 查看远程的文件， 点击文件并编辑， upload; 通过Tools > Deployment > Upload to 和download from 上传和下载文件
 
