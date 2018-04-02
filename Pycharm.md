@@ -28,8 +28,10 @@ Jumping to Cursor：If one would like to re-debug starting from a particular lin
 ## 怎样申请专业版和远程连服务器调试代码
 [申请教程](http://www.pythontip.com/blog/post/13119/)
 
-[远程调试教程](https://blog.csdn.net/ll641058431/article/details/53049453)
+[远程调试教程](https://www.cnblogs.com/xiongmao-cpp/p/7856596.html)
 
 Root path 是远程服务器的工作路径
 
 <img src=https://github.com/MinglangQiao/Tools_and_Scripts/raw/master/images/Tools/pycharm_server.png width="600" >
+
+ Web path 的设置，应该是用来配置网页上查看文件的服务，可以无视
