@@ -75,3 +75,10 @@ https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b
 
 
 ## 关键节点或者完成某项工作后就要及时commit， 方便以后查找和回滚
+
+
+##解决git push 每次都需要输用户名和密码的问题
+[参考资料](https://blog.csdn.net/toyijiu/article/details/73611874)
+
+git push -u origin master 如果当前分支与多个主机存在追踪关系，则可以使用 -u 参数指定一个默认主机，这样后面就可以不加任何参数使用git push，
+不带任何参数的git push，默认只推送当前分支，这叫做simple方式
