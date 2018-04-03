@@ -136,7 +136,7 @@ sudo ldconfig      #使链接生效
 
 test cuda saples
 ```
-cd /usr/local/cuda-8.0/samples/1_Utilities/deviceQuery
+cd /home/ml/NVIDIA_CUDA-8.0_Samples/1_Utilities/deviceQuery (note: change to your path)
 sudo make
 ./deviceQuery
 ```
