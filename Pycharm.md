@@ -15,6 +15,8 @@ whereis python ## 查看python位置
 
 5、[不能导入cv2, 先找到cv2的路径](https://blog.csdn.net/heroacool/article/details/50967281)
 
+6、[给pycharm添加快捷方式](http://www.jb51.net/article/130534.htm)
+
 
 ## Debug
 [Debug按钮的用法](https://www.jianshu.com/p/64a45714c58c)
