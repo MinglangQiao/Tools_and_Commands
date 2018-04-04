@@ -41,7 +41,7 @@ sudo gedit sources.list
 ```
 
 #### * 安装chrome
-去[官网]()下载安装包
+去[官网](https://www.google.cn/chrome/)下载安装包
 ```
 sudo dpkg -i google-chrome*
 sudo apt-get -f install 
