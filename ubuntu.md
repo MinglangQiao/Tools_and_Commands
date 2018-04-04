@@ -25,3 +25,7 @@ http://www.ubuntuthemes.org/
 第三步：100G  的逻辑分区，用来挂载/， 相当于windows的C盘
 
 第四步：1.7T 的逻辑分区，用来挂载/home，相当于windows上面的Document，根据自己情况
+
+
+#### 更改软件源为清华镜像
+https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
