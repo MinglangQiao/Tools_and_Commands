@@ -21,6 +21,6 @@ http://www.ubuntuthemes.org/
 
 第二步：32G 的逻辑分区，用来挂载/swap，大小一般和内存一样大
 
-第三步：100G  的逻辑分区，用来挂载/
+第三步：50G  的逻辑分区，用来挂载/， 相当于windows的C盘
 
-第四步：900G 的逻辑分区，用来挂载/home，相当于windows上面的Document，根据自己情况
+第四步：950G 的逻辑分区，用来挂载/home，相当于windows上面的Document，根据自己情况
