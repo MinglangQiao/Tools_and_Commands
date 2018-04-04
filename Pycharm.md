@@ -1,4 +1,10 @@
-## 
+## 安装
+去[这里](http://www.jetbrains.com/pycharm/download/previous.html)下载安装包
+```
+cd /home/ml/pycharm-2017.3.4/bin
+./pycharm.sh
+
+```
 
 1、在pycharm中，安装过的包 显示没有这个包的解决方案
 先
