@@ -46,3 +46,6 @@ sudo gedit sources.list
 sudo dpkg -i google-chrome*
 sudo apt-get -f install 
 ```
+
+#### ubuntu下不能访问某些硬盘
+https://www.cnblogs.com/565261641-fzh/p/5695819.html
