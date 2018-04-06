@@ -1,3 +1,9 @@
+# 首先安装ffmpeg
+```
+sudo apt-get install ffmpeg
+```
+
+
 # resize a video
 ### If you need to simply resize your video to a specific size (e.g 320⨉240), you can use the scale filter in its most basic form:
 
