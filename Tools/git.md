@@ -4,6 +4,7 @@ https://help.github.com/
 
 https://help.github.com/categories/collaborating-with-issues-and-pull-requests/
 
+[老廖的教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 
 ## 同步一个fork
 
