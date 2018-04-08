@@ -3,7 +3,7 @@
 pip install opencv-python  -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 ## 源码安装（验证过，可行）
-首先按照这个安装， 转移opencv的版本，比如darknet需要opencv2.4.x版本，否者会报错
+首先按照这个安装， 注意opencv的版本，比如darknet需要opencv2.4.x版本，否者会报错
 ```
 ./darknet: error while loading shared libraries: libopencv_highgui.so.2.4: cannot open shared object file: No such file or directory
 ```
