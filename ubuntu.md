@@ -56,3 +56,5 @@ https://blog.csdn.net/hywerr/article/details/72582082
 
 #### ubuntu下安装shadowshocks QT5 和 配置 SwitchOmega
 https://www.cnblogs.com/superxuezhazha/p/6065992.html
+
+(关于shadowsocks的介绍)[http://www.360doc.com/content/16/1009/23/1489589_597192113.shtml]
