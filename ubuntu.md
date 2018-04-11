@@ -58,3 +58,10 @@ https://blog.csdn.net/hywerr/article/details/72582082
 https://www.cnblogs.com/superxuezhazha/p/6065992.html
 
 [关于shadowsocks的介绍](http://www.360doc.com/content/16/1009/23/1489589_597192113.shtml)
+
+#### 双屏显示， 旋转一个屏幕， 不用每次开机都设置
+ubuntu 》》 系统设置 》》 显示 》》 旋转 
+
+xserver每次开机都要重新设置，还是该google直接搜想要的问题， 关键字都打上：
+ubuntu multi screen xserver rotate
+get：https://ubuntuforums.org/showthread.php?t=1835721
