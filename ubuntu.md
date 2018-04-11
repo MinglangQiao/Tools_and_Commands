@@ -53,3 +53,6 @@ https://www.cnblogs.com/565261641-fzh/p/5695819.html
 #### 如何修复ubuntu中检测到系统程序错误的问题
 https://blog.csdn.net/hywerr/article/details/72582082
 
+
+#### ubuntu下安装shadowshocks QT5 和 配置 SwitchOmega
+https://www.cnblogs.com/superxuezhazha/p/6065992.html
