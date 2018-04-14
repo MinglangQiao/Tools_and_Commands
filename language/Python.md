@@ -21,3 +21,6 @@ for line in lines:
 ```
 
 要简洁
+
+### 在用一个list循环append数据的时候， 一定要先清空这个list再进入下一次循环
+每次open一个file后记得close
