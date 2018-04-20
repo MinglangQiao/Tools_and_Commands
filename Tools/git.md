@@ -70,11 +70,10 @@ git reflog
 简介：http://blog.csdn.net/u010506504/article/details/43965627
 
 ### fork别人的项目后怎样同步更新别人的提交
-1、[在github上同步](https://blog.csdn.net/qq1332479771/article/details/56087333)
+1、推荐[在github上同步](https://blog.csdn.net/qq1332479771/article/details/56087333)，可以方便的查看和修改冲突的地方
 
 2、命令行同步
 ```
-
 git remote -v 
 git remote add upstream git@github.com:xxx/xxx.git
 git fetch upstream
