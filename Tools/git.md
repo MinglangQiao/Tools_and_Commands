@@ -78,7 +78,7 @@ git reflog
 如果还是无法合并，请根据命令行的提示操作，就可以解决
 
 
-2、命令行同步
+2、[命令行同步](https://blog.csdn.net/qq1332479771/article/details/56087333)
 ```
 git remote -v 
 git remote add upstream git@github.com:xxx/xxx.git
