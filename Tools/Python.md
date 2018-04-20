@@ -17,3 +17,10 @@ for i, im in enumerate(reader):
     print('Mean of frame %i is %1.1f' % (i, im.mean()))
     
 ```
+
+2、多用列表生成式，可以使代码更简介
+```python
+f = open(data_path, 'r')
+lines = f.readlines()
+all_data = [line.split() for line in lines]
+```
