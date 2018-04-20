@@ -75,8 +75,9 @@ git reflog
 注意把base fork改为自己的fork， head fork 改为作者的repo. 如果出现There isn’t anything to compare.是因为把base fork和 head fork弄成一样的的，可以先选择一个其他人的fork帮助完成base fork和head fork的设置
 
 
-如果还是无法合并，请根据命令行的提示操作，就可以解决
-如果还是不行，就把对应文件删了换成作者的文件，解决问题最总要，变通
+如果还是无法合并，请根据命令行的提示操作，就可以解决。不过要查一下每个命令什么意思，不要随便git rm
+
+如果还是不行，就把对应文件删了换成作者的文件，解决问题最重要，变通
 
 2、[命令行同步](https://blog.csdn.net/qq1332479771/article/details/56087333)
 ```
