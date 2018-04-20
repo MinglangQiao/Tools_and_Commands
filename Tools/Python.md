@@ -18,7 +18,7 @@ for i, im in enumerate(reader):
     
 ```
 
-2、多用列表生成式，可以使代码更简介
+2、读取txt的标准办法，多用列表生成式，可以使代码更简洁
 ```python
 f = open(data_path, 'r')
 lines = f.readlines()
