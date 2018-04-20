@@ -72,7 +72,7 @@ git reflog
 ### fork别人的项目后怎样同步更新别人的提交
 
 1、推荐[在github上同步](https://www.cnblogs.com/mff520mff/archive/2017/08/13/7355118.html)，可以方便的查看和修改冲突的地方
-注意把base fork改为自己的fork， head fork 改为作者的repo
+注意把base fork改为自己的fork， head fork 改为作者的repo. 如果出现There isn’t anything to compare.是因为把base fork和 head fork弄成一样的的，可以先选择一个其他人的fork帮助完成base fork和head fork的设置
 
 
 如果还是无法合并，请根据命令行的提示操作，就可以解决
