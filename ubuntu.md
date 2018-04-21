@@ -65,3 +65,22 @@ ubuntu 》》 系统设置 》》 显示 》》 旋转
 xserver每次开机都要重新设置，还是该google直接搜想要的问题， 关键字都打上：
 ubuntu multi screen xserver rotate
 get：https://ubuntuforums.org/showthread.php?t=1835721
+
+
+#### ubuntu 循环登录怎么办
+* 不要随便听信网上的话把profile给删掉了， 删完连cp sudo命令都没有了，即使删也要有备份
+
+* 如果没有了ls， cp等命令，首先应该google关键词的[ls, mv, cp, cat, vi, command not found](https://unix.stackexchange.com/questions/270585/ls-mv-cp-cat-vi-command-not-found)
+
+这些命令一般在/bin下， 所以可以加上前缀 /bin/ls,  /bin/cp等等。
+
+* 如果sudo也不行了， 也应该google关键词[Ubuntu 12.04 LTS bash: sudo: command not found [closed]
+](https://stackoverflow.com/questions/15596278/ubuntu-12-04-lts-bash-sudo-command-not-found)
+
+sudo命令在/usr/bin/下，使用/usr/bin/sudo即可， 然后cp /etc/profile_bak /etc/profile
+
+或者先su -获取root权限， 然后cp /etc/profile_bak /etc/profile
+
+重要把命令恢复了
+
+* 
