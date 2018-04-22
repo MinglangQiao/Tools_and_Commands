@@ -83,4 +83,8 @@ sudo命令在/usr/bin/下，使用/usr/bin/sudo即可， 然后cp /etc/profile_b
 
 重要把命令恢复了
 
+如果sudoers出问题了
+[参考这里](https://blog.csdn.net/mr_pang/article/details/51732900)
+安装前先su -获得root权限
+
 * 
