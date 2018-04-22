@@ -86,7 +86,7 @@ conda install -n python34 numpy
   [参考教程2](http://blog.csdn.net/u010837794/article/details/63251725)
   
  
-方法1：采用cuda的.deb安装包， 可以同时安装显卡驱动和cuda
+方法1：采用cuda的.deb安装包， 可以同时安装显卡驱动和cuda,而且可以避免 Nouveau (enable/disable)/xserver等问题
 首先去 [cuda8 offical site](https://developer.nvidia.com/cuda-toolkit-archive)下载.deb安装包，然后
 ```
 sudo dpkg -i cuda-repo-ubuntu1604-8-0-local_8.0.44-1_amd64.deb
