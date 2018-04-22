@@ -85,7 +85,18 @@ conda install -n python34 numpy
   [参考教程1](http://blog.csdn.net/autocyz/article/details/52299889/)
   [参考教程2](http://blog.csdn.net/u010837794/article/details/63251725)
   
- 方法1： 安装简单，但是下载慢， 不推荐，下次换个办法
+ 
+方法1：采用cuda的.deb安装包， 可以同时安装显卡驱动和cuda
+首先去 [cuda8 offical site](https://developer.nvidia.com/cuda-toolkit-archive)下载.deb安装包，然后
+```
+sudo dpkg -i cuda-repo-ubuntu1604-8-0-local_8.0.44-1_amd64.deb
+sudo apt-get update
+sudo apt-get install cuda
+
+reboot 
+```
+ 
+ 方法2： 安装不简单，而且下载慢， 不推荐
 * First Install nvidia driver：
 go to the [official sit](http://www.nvidia.com/Download/index.aspx?lang=en-us) to query your graphics driver version number, eg: 390
 
