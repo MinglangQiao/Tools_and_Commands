@@ -24,3 +24,5 @@ f = open(data_path, 'r')
 lines = f.readlines()
 all_data = [line.split() for line in lines]
 ```
+
+3、[__init__.py的作用](https://www.cnblogs.com/AlwinXu/p/5598543.html)
