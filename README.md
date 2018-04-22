@@ -73,6 +73,11 @@ conda list -n env_name
 conda install -n python34 numpy
 
  ```
+#### 怎样解决conda和系统环境的opencv问题
+[参考1](https://stackoverflow.com/questions/49195179/how-to-solve-the-conda-virtual-env-and-system-env-conflict-on-import-cv2)
+[在anaconda中安装opencv](https://stackoverflow.com/questions/38787748/installing-opencv-3-1-with-anaconda-python3)
+
+
 
 ## CUDA
 * [CUDA是什么鬼？](https://baike.baidu.com/item/CUDA/1186262?fr=aladdin)
