@@ -25,6 +25,7 @@ whereis python ## 查看python位置
 
 7、[设置ruler_line](https://www.cnblogs.com/dengyg200891/p/6061752.html)
 
+8、[jupyter notebook](http://zhuangzhuang.github.io/2017/01/22/fix-pycharm-jupyter/)
 
 ## Debug
 [Debug按钮的用法](https://www.jianshu.com/p/64a45714c58c)
