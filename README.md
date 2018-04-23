@@ -5,7 +5,7 @@
 
 [Document](https://docs.anaconda.com/anaconda/)
 
-[清华下载镜像](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/)
+### 用conda前一定要先添加 [清华下载镜像](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/)
 
 #### 一键安装/或者直接把另外一个电脑上的anaconda文件夹拷贝过来，然后添加环境变量
 ```
