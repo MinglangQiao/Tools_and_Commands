@@ -11,3 +11,7 @@ conda install pytorch torchvision -c pytorch
 如果出现了[jupyter notebook在pycharm中不能正常使用](http://zhuangzhuang.github.io/2017/01/22/fix-pycharm-jupyter/)
 
 
+### 2 pytorch 使用visdom
+[github主页](https://github.com/facebookresearch/visdom)
+
+[知乎1](https://zhuanlan.zhihu.com/p/34692106)
