@@ -44,12 +44,13 @@ conda install caffe
  
        2） make前把python环境改为系统的默认环境
        暂时办法
-       
-       
+   
         sudo rm /usr/bin/python
-        ln -s /usr/bin/python3.5 /usr/bin/python
+        sudo ln -s /usr/bin/python2.7 /usr/bin/python
         PATH=/usr/bin:$PATH
-       
+        
+        永久修改
+        
  
  * ImportError: dynamic module does not define module export function (PyInit__caffe)
  
