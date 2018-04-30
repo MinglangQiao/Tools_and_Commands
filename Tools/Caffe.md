@@ -50,12 +50,14 @@ conda install caffe
        
  
  * ImportError: dynamic module does not define module export function (PyInit__caffe)
+ 
 [python 版本不能太高](https://stackoverflow.com/questions/34295136/importerror-dynamic-module-does-not-define-module-export-function-pyinit-caff)
 
  
 * m//home/yali/anaconda2/lib/libpng16.so.16：对‘inflateValidate@ZLIB_1.2.9’未定义的引用
 
 [解决办法1](https://blog.csdn.net/ruotianxia/article/details/78437464)
+
 [如果办法1不行](https://stackoverflow.com/questions/48306849/lib-x86-64-linux-gnu-libz-so-1-version-zlib-1-2-9-not-found)
 
 * /sbin/ldconfig.real: /usr/local/cuda-8.0/lib64/libcudnn.so.5 
