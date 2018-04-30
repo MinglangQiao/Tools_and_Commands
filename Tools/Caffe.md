@@ -38,11 +38,22 @@ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 conda install caffe
 ```
 
-方法2： 参考这个教程装
+方法3：（在系统环境下安装可行，中间遇到什么问题再搜对应的错误信息和解决方案即可）
+ [参考中文安装教程](https://blog.csdn.net/yhaolpz/article/details/71375762)
+ 
+* m//home/yali/anaconda2/lib/libpng16.so.16：对‘inflateValidate@ZLIB_1.2.9’未定义的引用
+[解决办法1](https://blog.csdn.net/ruotianxia/article/details/78437464)
+
+* /sbin/ldconfig.real: /usr/local/cuda-8.0/lib64/libcudnn.so.5 
+[解决办法](https://blog.csdn.net/m0_37407756/article/details/70789271)， 如果不行关掉终端重新打开编译
+
+* 关于训练caffe模型出现./build/tools/caffe: command not found
+[解决办法](https://blog.csdn.net/xunan003/article/details/72997028)
+
+
+
+
+方法3： 参考这个教程装(有bug没解决)
 https://yangcha.github.io/Caffe-Conda3/
 
 
-
-
-方法3： 各种bug， 没成功
- [参考中文安装教程](https://blog.csdn.net/yhaolpz/article/details/71375762)
