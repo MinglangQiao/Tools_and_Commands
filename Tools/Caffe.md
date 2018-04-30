@@ -31,12 +31,12 @@ cudnn 版本
 cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 ```
 
-方法1（注意先把conda的源改成清华镜像）：
+## 方法1（注意先把conda的源改成清华镜像）：
 ```
 conda install caffe
 ```
 
-方法3：（在系统环境下安装可行，中间遇到什么问题再搜对应的错误信息和解决方案即可）
+## 方法2：（在系统环境下安装可行，中间遇到什么问题再搜对应的错误信息和解决方案即可）
 
  [参考中文安装教程](https://blog.csdn.net/yhaolpz/article/details/71375762)
  
@@ -72,7 +72,7 @@ conda install caffe
 
 
 
-方法3： 虚拟环境下安装caffe， 参考这个教程装(有bug没解决)
+## 方法3： 虚拟环境下安装caffe， 参考这个教程装(有bug没解决)
 
 https://yangcha.github.io/Caffe-Conda3/
 
