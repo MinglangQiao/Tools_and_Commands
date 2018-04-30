@@ -39,6 +39,8 @@ conda install caffe
 方法3：（在系统环境下安装可行，中间遇到什么问题再搜对应的错误信息和解决方案即可）
 
  [参考中文安装教程](https://blog.csdn.net/yhaolpz/article/details/71375762)
+ 注意： 1）第9步和第10部那里make时不要sudo权限
+ 
  
 * m//home/yali/anaconda2/lib/libpng16.so.16：对‘inflateValidate@ZLIB_1.2.9’未定义的引用
 
