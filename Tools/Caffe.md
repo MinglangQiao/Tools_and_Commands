@@ -38,6 +38,9 @@ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 conda install caffe
 ```
 
+方法3： 参考这个教程装
+https://yangcha.github.io/Caffe-Conda3/
 
-方法2： 各种bug， 没成功
+
+方法3： 各种bug， 没成功
  [参考中文安装教程](https://blog.csdn.net/yhaolpz/article/details/71375762)
