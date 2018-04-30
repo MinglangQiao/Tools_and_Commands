@@ -41,20 +41,20 @@ conda install caffe
  [参考中文安装教程](https://blog.csdn.net/yhaolpz/article/details/71375762)
  
  注意： 1）第9步和第10部那里make时不要sudo权限
- 
        2） make前把python环境改为系统的默认环境
        暂时办法
-   
-        ```
-        sudo rm /usr/bin/python
-        sudo ln -s /usr/bin/python2.7 /usr/bin/python
-        PATH=/usr/bin:$PATH
-        ```
+       
+       
+  ```
+  sudo rm /usr/bin/python
+  sudo ln -s /usr/bin/python2.7 /usr/bin/python
+  PATH=/usr/bin:$PATH
+ ```
         
-        永久修改
-        ```
-        
-        ```
+ 永久修改
+ ```
+
+ ```
         
  * ImportError: dynamic module does not define module export function (PyInit__caffe)
  
