@@ -1,6 +1,6 @@
 [官网安装教程](http://caffe.berkeleyvision.org/install_apt.html)
 
-先安装虚拟环境
+先不要安装虚拟环境
 ```
  conda create -n caffe python=3.5
  
@@ -72,8 +72,7 @@ conda install caffe
 
 
 
-
-方法3： 参考这个教程装(有bug没解决)
+方法3： 虚拟环境下安装caffe， 参考这个教程装(有bug没解决)
 
 https://yangcha.github.io/Caffe-Conda3/
 
