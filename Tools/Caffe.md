@@ -45,13 +45,14 @@ conda install caffe
        ```
        export PATH=/usr/bin:$PATH
        ```
+       
        永久办法
        ```
        
        ```
  
  * ImportError: dynamic module does not define module export function (PyInit__caffe)
-[python 版本不能太高](ImportError: dynamic module does not define module export function (PyInit__caffe))
+[python 版本不能太高](https://stackoverflow.com/questions/34295136/importerror-dynamic-module-does-not-define-module-export-function-pyinit-caff)
 
  
 * m//home/yali/anaconda2/lib/libpng16.so.16：对‘inflateValidate@ZLIB_1.2.9’未定义的引用
