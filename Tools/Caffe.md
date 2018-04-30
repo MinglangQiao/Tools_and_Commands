@@ -7,8 +7,6 @@
  conda activate caffe
  
  conda deactivate
- 
- 
 ```
 
 
