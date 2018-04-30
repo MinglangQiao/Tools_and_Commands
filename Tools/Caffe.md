@@ -11,7 +11,6 @@
  
 ```
 
- [参考中文安装教程](https://blog.csdn.net/yhaolpz/article/details/71375762)
 
 需要保证添加了cuda路径和安装了cudnn
 
@@ -33,3 +32,12 @@ cat /usr/local/cuda/version.txt
 cudnn 版本 
 cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 ```
+
+方法1（注意先把conda的源改成清华镜像）：
+```
+conda install caffe
+```
+
+
+方法2： 各种bug， 没成功
+ [参考中文安装教程](https://blog.csdn.net/yhaolpz/article/details/71375762)
