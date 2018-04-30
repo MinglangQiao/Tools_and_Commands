@@ -40,11 +40,21 @@ conda install caffe
 
  [参考中文安装教程](https://blog.csdn.net/yhaolpz/article/details/71375762)
  注意： 1）第9步和第10部那里make时不要sudo权限
+       2） make前把python环境改为系统的默认环境
+       暂时办法
+       ```
+       export PATH=/usr/bin:$PATH
+       ```
+       永久办法
+       ```
+       
+       ```
  
  
 * m//home/yali/anaconda2/lib/libpng16.so.16：对‘inflateValidate@ZLIB_1.2.9’未定义的引用
 
 [解决办法1](https://blog.csdn.net/ruotianxia/article/details/78437464)
+[如果办法1不行](https://stackoverflow.com/questions/48306849/lib-x86-64-linux-gnu-libz-so-1-version-zlib-1-2-9-not-found)
 
 * /sbin/ldconfig.real: /usr/local/cuda-8.0/lib64/libcudnn.so.5 
 
