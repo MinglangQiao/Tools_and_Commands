@@ -8,5 +8,23 @@
  
  conda deactivate
  
+ [参考中文安装教程](https://blog.csdn.net/yhaolpz/article/details/71375762)
+ 
 ```
 
+需要保证添加了cuda路径和安装了cudnn
+```
+sudo gedit ~/.bashrc
+export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH 
+
+``
+
+查看cuda版本对不对， 系统更新时可能会把cuda给更新了
+```
+cuda 版本 
+cat /usr/local/cuda/version.txt
+
+cudnn 版本 
+cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+```
