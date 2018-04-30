@@ -53,6 +53,13 @@ conda install caffe
         
  永久修改
  ```
+sudo gedit ~/.bashrc
+
+## 添加
+alias python=/usr/bin/python
+
+##立即生效
+source ~/.bashrc
 
  ```
         
