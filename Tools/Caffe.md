@@ -47,7 +47,7 @@ conda install caffe
        
        
         sudo rm /usr/bin/python
-        ln -s /usr/bin/python3.5 /user/bin/python
+        ln -s /usr/bin/python3.5 /usr/bin/python
         PATH=/usr/bin:$PATH
        
  
