@@ -42,12 +42,10 @@ conda install caffe
  注意： 1）第9步和第10部那里make时不要sudo权限
        2） make前把python环境改为系统的默认环境
        暂时办法
-       ```
-       export PATH=/usr/bin:$PATH
-       ```
        
-       永久办法
-       ```
+       ```
+       
+       export PATH=/usr/bin:$PATH
        
        ```
  
