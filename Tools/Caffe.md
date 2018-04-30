@@ -20,7 +20,9 @@ export LD_LIBRARY_PATH=/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
 
 ``
 
-查看cuda版本对不对， 系统更新时可能会把cuda给更新了
+查看cuda版本对不对， 系统更新时可能会把cuda给更新了。以后不要随便更新系统文件了
+
+
 ```
 cuda 版本 
 cat /usr/local/cuda/version.txt
