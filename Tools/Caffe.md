@@ -42,6 +42,7 @@ conda install caffe
  注意： 1）第9步和第10部那里make时不要sudo权限
        2） make前把python环境改为系统的默认环境
        暂时办法
+       
        ```
         sudo rm /usr/bin/python
         ln -s /usr/bin/python3.5 /user/bin/python
