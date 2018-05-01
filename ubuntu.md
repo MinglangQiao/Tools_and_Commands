@@ -88,3 +88,21 @@ sudo命令在/usr/bin/下，使用/usr/bin/sudo即可， 然后cp /etc/profile_b
 安装前先su -获得root权限
 
 * 
+
+
+#### 如果不能上网
+先看看ip地址有没有
+```
+ifconfig
+```
+
+如果没有，执行一下命令，应该就有了，然后就能联网了
+```
+sudo dhclient
+```
+
+[设置静态ip](https://blog.csdn.net/xiaohuozi_2016/article/details/54743992), DNS服务器可以在
+windows下执行下列命令，查看。 但是又会导致连不网
+```
+ipconfig /all
+```
