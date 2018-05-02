@@ -82,6 +82,11 @@ source ~/.bashrc
 
 [解决办法](https://blog.csdn.net/xunan003/article/details/72997028)
 
+* This program requires version 3.2.0 of the Protocol Buffer runtime library, but the installed version is 2.6.1
+
+https://www.cnblogs.com/mengmengmiaomiao/p/8134771.html
+
+
 
 
 ## 方法3： 虚拟环境下安装caffe， 参考这个教程装(有bug没解决)
