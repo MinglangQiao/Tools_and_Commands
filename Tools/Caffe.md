@@ -88,4 +88,9 @@ source ~/.bashrc
 
 https://yangcha.github.io/Caffe-Conda3/
 
+## 在终端可以import caffe但是在pycharm中No module named caffe
 
+```
+import sys
+sys.path.append("/home/ml/caffe/python")
+```
