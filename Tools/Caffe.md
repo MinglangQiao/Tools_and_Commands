@@ -100,7 +100,14 @@ sys.path.append("/home/ml/caffe/python")
 
 https://www.cnblogs.com/haoliuhust/p/7738920.html
 
-
+首先，参照这个教程安装HarfBuzz: http://www.linuxfromscratch.org/blfs/view/svn/general/harfbuzz.html,
+然后参照这个教程安装bZip2,注意加  -fPIC， ，没有./configure,直接
+```
+make 
+sudo make install
+```
+然后参照这个教程安装freetype：https://blog.csdn.net/dongtinghong/article/details/72731156， 以及官方说的装两次
+http://www.linuxfromscratch.org/blfs/view/svn/general/freetype2.html
 
 
 
