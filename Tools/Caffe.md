@@ -94,3 +94,14 @@ https://yangcha.github.io/Caffe-Conda3/
 import sys
 sys.path.append("/home/ml/caffe/python")
 ```
+
+如果太长了没有答案，就把核心的错误拿来搜索
+比如 * ImportError: /home/ml/anaconda3/lib/./libharfbuzz.so.0: undefined symbol: FT_Get_Var_Blend_Coordinates
+
+https://www.cnblogs.com/haoliuhust/p/7738920.html
+
+
+
+
+
+
