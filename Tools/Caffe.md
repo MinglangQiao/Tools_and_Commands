@@ -109,6 +109,9 @@ sudo make install
 然后参照这个教程安装freetype：https://blog.csdn.net/dongtinghong/article/details/72731156， 以及官方说的装两次
 http://www.linuxfromscratch.org/blfs/view/svn/general/freetype2.html
 
+然后重启
+
+接着会遇到这个问题：
 
 
 
