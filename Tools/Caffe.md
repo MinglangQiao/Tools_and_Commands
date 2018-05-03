@@ -145,7 +145,7 @@ sudo apt-get install git cmake build-essential
 
 2 确保nvidia driver， cuda8 ， cudnn 5安装好了
 
-3 安装opencv3.1， 从源码安装， [参考](https://blog.csdn.net/cocoaqin/article/details/78163171)
+3 安装opencv3.1， 从源码安装， [参考](https://github.com/MinglangQiao/Tools_and_Commands/blob/master/Tools/Opencv.md)
 
 
 
