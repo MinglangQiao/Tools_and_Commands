@@ -18,12 +18,12 @@ https://blog.csdn.net/xulingqiang/article/details/52496701
 ### 可能出现的错误
 * 安装opencv3.1时 incorrect hash in cmake ippicv when installing
 
-https://github.com/opencv/opencv/issues/5973， alalek commented on 15 Jan 2016的回答，自己下载IPPICV文件 
+    https://github.com/opencv/opencv/issues/5973， alalek commented on 15 Jan 2016的回答，自己下载IPPICV文件 
 
 * 如果出现与ananconda中的opencv2或者caffe相关的问题时，就在conda下把对应的opencv卸载掉就能成功编译了
 
 * error: ‘nppiGraphcut8_32f8u’ was not declared in this scope
-CUDA 8 与opencv3.1有冲突，参考[这里](https://github.com/opencv/opencv/issues/8036), 或者安装opencv3.2 +的版本
+    CUDA 8 与opencv3.1有冲突，参考[这里](https://github.com/opencv/opencv/issues/8036), 或者安装opencv3.2 +的版本
 
 
 ## 源码安装(差一点可行)
