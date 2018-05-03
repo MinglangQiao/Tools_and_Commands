@@ -169,6 +169,7 @@ export CPLUS_INCLUDE_PATH=/usr/include/python3.5
 Ubuntu16.04 + gtx1080ti + cuda8.0 + cudnn5.1 + opencv3.4 + Anaconda3 + python3.5 + caffe
 
 特别鸣谢一下教程，每个教程都不完全正确（for me），但相互补充，要配合着看： 
+
  [1 Ubuntu16.04 Caffe 安装步骤记录（超详尽）](https://blog.csdn.net/yhaolpz/article/details/71375762)
  
  [2 Python3.5 Anaconda3 Caffe深度学习框架搭建](http://yingshu.ink/2017/01/12/Python3-5-Anaconda3-Caffe%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/) ， 更改Makefile config文件的方法。
@@ -178,9 +179,13 @@ Ubuntu16.04 + gtx1080ti + cuda8.0 + cudnn5.1 + opencv3.4 + Anaconda3 + python3.5
  [4 ubuntu16.04下，安装caffe+cuda8.0+Anaconda3+cudnn5.1](https://blog.csdn.net/xiongchao99/article/details/79099173)
  
  分为以下4个大步骤：
+ 
  * 1 安装依赖包
+ 
  * 2 安装显卡驱动 + cuda8 + cudnn5
+ 
  * 3 安装 opencv3.4
+ 
  * 4 安装caffe
  
  ## 1 安装依赖包
@@ -201,9 +206,10 @@ sudo apt-get install git cmake build-essential
 ### 2.1 安装显卡驱动
 
  参考[这个教程](https://github.com/MinglangQiao/Tools_and_Commands) 安装显卡驱动， 建议下载NVIDIA的sh文件安装， 最后验证
-  ```
-  nvidia-smi
-  ```
+ 
+ ```
+nvidia-smi
+```
   
  ### 2.1 安装cuda
  
