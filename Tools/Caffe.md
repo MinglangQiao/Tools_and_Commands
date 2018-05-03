@@ -38,7 +38,11 @@ conda install caffe
 
 ## 方法2：（在系统环境下安装可行，中间遇到什么问题再搜对应的错误信息和解决方案即可）
 
- [参考中文安装教程](https://blog.csdn.net/yhaolpz/article/details/71375762)
+ [参考中文安装教程1](https://blog.csdn.net/yhaolpz/article/details/71375762)
+ [参考中文安装教程2](http://yingshu.ink/2017/01/12/Python3-5-Anaconda3-Caffe%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/) ， 更改Makefile config文件的方法。
+ [参考中文安装教程3](https://blog.csdn.net/liu941027/article/details/78106462)
+ [参考中文安装教程4](https://blog.csdn.net/xiongchao99/article/details/79099173)
+
  
  注意： 1）第9步和第10部那里make时不要sudo权限
        2） make前把python环境改为系统的默认环境
