@@ -285,12 +285,13 @@ PYTHON_INCLUDE := $(ANACONDA_HOME)/include \
  ```
  
   * 5 PYTHON_LIBRARIES 设置，这里也比较关键
-  ```
+  
+ ```
 # Uncomment to use Python 3 (default is Python 2)
 PYTHON_LIBRARIES := boost_python-py35 python3.5m  
 # PYTHON_INCLUDE := /usr/include/python3.5m \
 #                 /usr/lib/python3.5/dist-packages/numpy/core/include
-  ```
+```
   
   原文是boost_python3  python3.5m，编译会出找不到文件的错误，从stackflow上面得知有一个解决方法
   ```
