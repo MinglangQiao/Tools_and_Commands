@@ -268,6 +268,7 @@ sudo make
  * 2 OPENCV_VERSION=3 #去掉前面的注释，我们使用的是opencv3
  
  * 3 把系统的python环境禁用掉
+ 
  ```
 # PYTHON_INCLUDE := /usr/include/python2.7 \
 # 		/usr/lib/python2.7/dist-packages/numpy/core/include
@@ -275,14 +276,14 @@ sudo make
  
  * 4 启用ananconda的python3.5环境， 注意ANACONDA_HOME := $(HOME)/anaconda3/envs/python35， 而不是默认的ANACONDA_HOME := $(HOME)/anaconda， 我刚开始以为怎样不行， 结果居然可以
  
- ```
+```
  # Anaconda Python distribution is quite popular. Include path:
 # Verify anaconda location, sometimes it's in root.
 ANACONDA_HOME := $(HOME)/anaconda3/envs/python35
 PYTHON_INCLUDE := $(ANACONDA_HOME)/include \
 		# $(ANACONDA_HOME)/include/python3.5m \
 		# $(ANACONDA_HOME)/lib/python3.5/site-packages/numpy/core/include
- ```
+```
  
   * 5 PYTHON_LIBRARIES 设置，这里也比较关键
   
@@ -297,11 +298,10 @@ PYTHON_LIBRARIES := boost_python-py35 python3.5m
   ```
   sudo locate boost_python
   ```
-  这里是查找自己系统的lboost-python对应的版本，我电脑上的是35,所以将 boost_python3改为 boost_python-py35就可以
-  ，如下图所示
-  
-  
+  这里是查找自己系统的lboost-python对应的版本，我电脑上的是35,所以将 boost_python3改为 boost_python-py35就可以， 如下图所示
+
   * 6 INCLUDE_DIRS 和 LIBRARY_DIRS
+  
   ```
 INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include
 LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib 
