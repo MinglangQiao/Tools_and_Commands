@@ -164,6 +164,6 @@ ImportError: /home/ml/caffe-master/python/caffe/_caffe.so: undefined symbol: PyC
 ```
 make clean 
 export CPLUS_INCLUDE_PATH=/usr/include/python3.5
-make all -j8
 ```
+然后再重新编译
 
