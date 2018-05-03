@@ -1,4 +1,4 @@
-## 通过pip和清华镜像安装，超快(可行)
+## 通过pip和清华镜像安装，超快， 不过安装的是简化版本(可行)
 ```
 pip install opencv-python  -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
