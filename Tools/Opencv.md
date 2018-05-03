@@ -7,11 +7,13 @@ pip install opencv-python  -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 https://blog.csdn.net/qq_29828623/article/details/73556713
 
-## 源码安装（验证过，可行）
-首先按照这个安装， 注意opencv的版本，比如darknet需要opencv2.4.x版本，否者会报错
+## 方法2 源码安装（验证过，可行）
+
+注意opencv的版本，比如darknet需要opencv2.4.x版本，否者会报错
 ```
 ./darknet: error while loading shared libraries: libopencv_highgui.so.2.4: cannot open shared object file: No such file or directory
 ```
+首先按照这个安装，
 https://blog.csdn.net/cocoaqin/article/details/78163171
 
 然后按照这个配置环境变量： 
@@ -19,6 +21,11 @@ https://blog.csdn.net/cv_you/article/details/77341631
 
 如果你想卸载opencv： 
 https://blog.csdn.net/xulingqiang/article/details/52496701
+
+安装完了查看opencv版本
+```
+pkg-config --modversion opencv
+```
 
 ### 可能出现的错误
 * 安装opencv3.1时 incorrect hash in cmake ippicv when installing
@@ -31,10 +38,7 @@ https://blog.csdn.net/xulingqiang/article/details/52496701
 
     CUDA 8 与opencv3.1有冲突，参考[这里](https://github.com/opencv/opencv/issues/8036), 或者安装opencv3.2 +的版本
 
-安装完了查看opencv版本
-```
-pkg-config --modversion opencv
-```
+
 
 ## 源码安装(差一点可行)
 1、安装依赖
