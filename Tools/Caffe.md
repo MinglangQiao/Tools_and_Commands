@@ -168,7 +168,7 @@ export CPLUS_INCLUDE_PATH=/usr/include/python3.5
 #### 配置：
 Ubuntu16.04 + gtx1080ti + cuda8.0 + cudnn5.1 + opencv3.4 + Anaconda3 + python3.5 + caffe
 
-特别鸣谢一下教程，每个教程都不完全正确（for me），但相互补充，要配合着看： 
+特别鸣谢一下这几个教程，每个教程都不完全正确（for me），但相互补充，要配合着看： 
 
  [1 Ubuntu16.04 Caffe 安装步骤记录（超详尽）](https://blog.csdn.net/yhaolpz/article/details/71375762)
  
@@ -186,7 +186,17 @@ Ubuntu16.04 + gtx1080ti + cuda8.0 + cudnn5.1 + opencv3.4 + Anaconda3 + python3.5
  
  * 3 安装 opencv3.4
  
- * 4 安装caffe
+ * 4 ananconda3配置
+ 
+ * 5 安装caffe
+ 
+ 安装心得：
+ 
+ * 保证每一步做正确了再做下一步， 如果前面做的不对， 后边可能出现很多意想不到的错误， 错到你怀疑人生
+ 
+ * 遇到什么错就相应的在百度和google搜索; 如果没有现成的答案， 需要合理的推理和参考， 考虑可能的原因并验证
+ 
+ * 实在卡在某个地方动不了了不要死磕， 从头在来一遍， 不要怕麻烦
  
  ## 1 安装依赖包
  ```
@@ -224,15 +234,182 @@ sudo make
 
 ### 2.2 安装cuda
 
-还是参考[这个教程](https://github.com/MinglangQiao/Tools_and_Commands) 安装cudnn5.1，一定要及得按教程里面的sudo ldconfig更新链接
+还是参考[这个教程](https://github.com/MinglangQiao/Tools_and_Commands) 安装cudnn5.1，一定要记得按教程里面的sudo ldconfig更新链接
  
  
  ## 3 安装opencv3.4.0
  
  参考[这个教程](https://github.com/MinglangQiao/Tools_and_Commands)的方法2 安装， 即从源码安装，安装完查看opencv版本是否为3.4.0
  
+ ## 4 ananconda3配置
+ 
+ * 首先不要在虚拟环境环境下安装caffe， 反正我是没有试成功
+ 
+ * ananconda3的默认python环境是python3.6, 但为了保险我没用默认的python3.6环境，而是新建了一个python=3.5的环境。如果你在默认环境下python = 3.6配成功了，记得告诉我啊
  
  
+ ## 5 安装caffe
+ 
+ ### 5.1 更改配置文件(非常关键)
+ 
+ 加入解压后的caffe目录，首先创建一个Makefile.config
+ ```
+ cp Makefile.config.example Makefile.config
+ ```
+ 
+ #### 修改Makefile.config文件
+ ```
+ sudo gedit Makefile.config
+ ```
+ 
+ 然后修改一下这些配置， 修改后的Makefile.config 和 Makefile已经上传到[这里]()
+ * 1 USE_CUDNN=1 #去掉前面的注释
+ 
+ * 2 OPENCV_VERSION=3 #去掉前面的注释，我们使用的是opencv3
+ 
+ * 3 把系统的python环境禁用掉
+ ```
+# PYTHON_INCLUDE := /usr/include/python2.7 \
+# 		/usr/lib/python2.7/dist-packages/numpy/core/include
+ ```
+ 
+ * 4 启用ananconda的python3.5环境， 注意ANACONDA_HOME := $(HOME)/anaconda3/envs/python35， 而不是默认的ANACONDA_HOME := $(HOME)/anaconda， 我刚开始以为怎样不行， 结果居然可以
+ 
+ ```
+ # Anaconda Python distribution is quite popular. Include path:
+# Verify anaconda location, sometimes it's in root.
+ANACONDA_HOME := $(HOME)/anaconda3/envs/python35
+PYTHON_INCLUDE := $(ANACONDA_HOME)/include \
+		# $(ANACONDA_HOME)/include/python3.5m \
+		# $(ANACONDA_HOME)/lib/python3.5/site-packages/numpy/core/include
+ ```
+ 
+  * 5 PYTHON_LIBRARIES 设置，这里也比较关键
+  ```
+# Uncomment to use Python 3 (default is Python 2)
+PYTHON_LIBRARIES := boost_python-py35 python3.5m  
+# PYTHON_INCLUDE := /usr/include/python3.5m \
+#                 /usr/lib/python3.5/dist-packages/numpy/core/include
+  ```
+  
+  原文是boost_python3  python3.5m，编译会出找不到文件的错误，从stackflow上面得知有一个解决方法
+  ```
+  sudo locate boost_python
+  ```
+  这里是查找自己系统的lboost-python对应的版本，我电脑上的是35,所以将 boost_python3改为 boost_python-py35就可以
+  ，如下图所示
+  
+  
+  * 6 INCLUDE_DIRS 和 LIBRARY_DIRS
+  ```
+INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include
+LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib 
+修改为： 
+INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial
+LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu/hdf5/serial 
+  ```
+  
+  * 7 启用 WITH_PYTHON_LAYER
+  ```
+ # Uncomment to support layers written in Python (will link against Python libs)
+WITH_PYTHON_LAYER := 1 #因为我就是要用Python来写
+ ```
+  
+  
+  * 8 启用 PYTHON_LIB
+  ```
+  PYTHON_LIB := $(ANACONDA_HOME)/lib
+  ```
+  
+ 
+ 
+ #### 修改Makefie文件
+ ```
+ sudo gedit Makefile
+ ```
+ 
+  * 1 修改成下面这样
+  ```
+将：
+LIBRARIES += glog gflags protobuf boost_system boost_filesystem m hdf5_hl hdf5
+改为：
+LIBRARIES += glog gflags protobuf boost_system boost_filesystem m hdf5_serial_hl hdf5_serial
+  ```
+  
+  * 2 
+  ```
+  将：
+NVCCFLAGS +=-ccbin=$(CXX) -Xcompiler-fPIC $(COMMON_FLAGS)
+替换为：
+NVCCFLAGS += -D_FORCE_INLINES -ccbin=$(CXX) -Xcompiler -fPIC $(COMMON_FLAGS)
+  ```
+  
+  * 3 修改 /usr/local/cuda/include/host_config.h 文件
+```
+将
+#error-- unsupported GNU version! gcc versions later than 4.9 are not supported!
+改为
+//#error-- unsupported GNU version! gcc versions later than 4.9 are not supported!
+```
+ 
+ ### 5.2 编译caffe
+ 
+  * step 1
+  ```
+  make all -j12
+  ```
+如果这一步报了一个这种错
+```
+In file included from /usr/include/boost/python/detail/prefix.hpp:13:0,
+                 from /usr/include/boost/python/args.hpp:8,
+                 from /usr/include/boost/python.hpp:11,
+                 from python/caffe/_caffe.cpp:8:
+/usr/include/boost/python/detail/wrap_python.hpp:50:23: fatal error: pyconfig.h: No such file or directory
+```
+这么解决
+
+```
+make clean 
+export CPLUS_INCLUDE_PATH=/usr/include/python3.5
+```
+然后再编译
+
+* step 2
+```
+make test -j12
+make runtest -j12
+make pycaffe -j $(($(nproc) + 1))
+```
+
+* step3 添加环境变量
+```
+sudo vim ~/.bashrc
+
+## 在末尾加入
+export PYTHONPATH=/home/ubuntu/caffe/caffe-master/python:$PYTHONPATH
+
+## 立即生效
+source ~./bashrc
+```
+
+然后
+```
+cd caffe-master/python/
+
+python
+
+import caffe
+
+```
+或者
+```
+caffe-master/python/python
+
+import caffe
+```
+写程序时如果报错没有caffe， 需要在开头加入路径
+```
+```
 
 
 
