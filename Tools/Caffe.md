@@ -143,9 +143,12 @@ sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
 sudo apt-get install git cmake build-essential
 ```
 
-2、确保nvidia driver， cuda8 ， cudnn 5安装好了
+2 确保nvidia driver， cuda8 ， cudnn 5安装好了
+
+3 安装opencv3.1， 从源码安装， [参考](https://blog.csdn.net/cocoaqin/article/details/78163171)
 
 
-3、编译caffe
-  3.1 修改Makefile文件[参考中文安装教程2](http://yingshu.ink/2017/01/12/Python3-5-Anaconda3-Caffe%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/) ， 更改Makefile config文件的方法。
+
+4 编译caffe
+  4.1 修改Makefile文件[参考中文安装教程2](http://yingshu.ink/2017/01/12/Python3-5-Anaconda3-Caffe%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/) ， 更改Makefile config文件的方法。
 
