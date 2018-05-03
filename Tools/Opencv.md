@@ -23,6 +23,7 @@ https://blog.csdn.net/xulingqiang/article/details/52496701
 * 如果出现与ananconda中的opencv2或者caffe相关的问题时，就在conda下把对应的opencv卸载掉就能成功编译了
 
 * error: ‘nppiGraphcut8_32f8u’ was not declared in this scope
+
     CUDA 8 与opencv3.1有冲突，参考[这里](https://github.com/opencv/opencv/issues/8036), 或者安装opencv3.2 +的版本
 
 
