@@ -15,6 +15,10 @@ https://blog.csdn.net/cv_you/article/details/77341631
 如果你想卸载opencv： 
 https://blog.csdn.net/xulingqiang/article/details/52496701
 
+### 可能出现的错误
+* 安装opencv3.1时 incorrect hash in cmake ippicv when installing
+
+https://github.com/opencv/opencv/issues/5973， alalek commented on 15 Jan 2016的回答，自己下载IPPICV文件 
 
 
 ## 源码安装(差一点可行)
