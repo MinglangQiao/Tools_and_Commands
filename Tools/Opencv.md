@@ -13,16 +13,16 @@ https://blog.csdn.net/qq_29828623/article/details/73556713
 ```
 ./darknet: error while loading shared libraries: libopencv_highgui.so.2.4: cannot open shared object file: No such file or directory
 ```
-首先按照这个安装，
+1 首先按照这个安装，
 https://blog.csdn.net/cocoaqin/article/details/78163171
 
-然后按照这个配置环境变量： 
+2 如果安装出现问题，按照这个配置环境变量; 如果没有问题，就跳到4： 
 https://blog.csdn.net/cv_you/article/details/77341631
 
-如果你想卸载opencv： 
+3 如果你想卸载opencv： 
 https://blog.csdn.net/xulingqiang/article/details/52496701
 
-安装完了查看opencv版本
+4 安装完了查看opencv版本
 ```
 pkg-config --modversion opencv
 ```
