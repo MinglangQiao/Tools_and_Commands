@@ -31,6 +31,10 @@ https://blog.csdn.net/xulingqiang/article/details/52496701
 
     CUDA 8 与opencv3.1有冲突，参考[这里](https://github.com/opencv/opencv/issues/8036), 或者安装opencv3.2 +的版本
 
+安装完了查看opencv版本
+```
+pkg-config --modversion opencv
+```
 
 ## 源码安装(差一点可行)
 1、安装依赖
