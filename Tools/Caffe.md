@@ -38,13 +38,7 @@ conda install caffe
 
 ## 方法2：（在系统环境下安装可行，中间遇到什么问题再搜对应的错误信息和解决方案即可）
 
- [参考中文安装教程1](https://blog.csdn.net/yhaolpz/article/details/71375762)
- 
- [参考中文安装教程2](http://yingshu.ink/2017/01/12/Python3-5-Anaconda3-Caffe%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/) ， 更改Makefile config文件的方法。
- 
- [参考中文安装教程3](https://blog.csdn.net/liu941027/article/details/78106462)
- 
- [参考中文安装教程4](https://blog.csdn.net/xiongchao99/article/details/79099173)
+
 
  
  注意： 1）第9步和第10部那里make时不要sudo权限
@@ -169,6 +163,71 @@ export CPLUS_INCLUDE_PATH=/usr/include/python3.5
 
 # 注意啦
 ##########################################################################################
-                                          正儿八经自己配成功了的教程
+                            正儿八经自己配成功了的教程
 ###########################################################################################
+#### 配置：
+Ubuntu16.04 + gtx1080ti + cuda8.0 + cudnn5.1 + opencv3.4 + Anaconda3 + python3.5 + caffe
+
+特别鸣谢一下教程，每个教程都不完全正确（for me），但相互补充，要配合着看： 
+ [1 Ubuntu16.04 Caffe 安装步骤记录（超详尽）](https://blog.csdn.net/yhaolpz/article/details/71375762)
+ 
+ [2 Python3.5 Anaconda3 Caffe深度学习框架搭建](http://yingshu.ink/2017/01/12/Python3-5-Anaconda3-Caffe%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/) ， 更改Makefile config文件的方法。
+ 
+ [3 心酸的Caffe安装之路](https://blog.csdn.net/liu941027/article/details/78106462)
+ 
+ [4 ubuntu16.04下，安装caffe+cuda8.0+Anaconda3+cudnn5.1](https://blog.csdn.net/xiongchao99/article/details/79099173)
+ 
+ 分为以下4个大步骤：
+ * 1 安装依赖包
+ * 2 安装显卡驱动 + cuda8 + cudnn5
+ * 3 安装 opencv3.4
+ * 4 安装caffe
+ 
+ ## 1 安装依赖包
+ ```
+ sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
+
+sudo apt-get install --no-install-recommends libboost-all-dev
+
+sudo apt-get install libopenblas-dev liblapack-dev libatlas-base-dev
+
+sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev
+
+sudo apt-get install git cmake build-essential
+ ```
+ 
+ ## 2 安装显卡驱动 + cuda8 + cudnn5
+  
+### 2.1 安装显卡驱动
+
+ 参考[这个教程](https://github.com/MinglangQiao/Tools_and_Commands) 安装显卡驱动， 建议下载NVIDIA的sh文件安装， 最后验证
+  ```
+  nvidia-smi
+  ```
+  
+ ### 2.1 安装cuda
+ 
+ 还是参考[这个教程](https://github.com/MinglangQiao/Tools_and_Commands) 安装cuda8.0， 还是建议下载sh文件安装， 最后按教程里面的方法验证
+
+ 
+```
+cd /home/ml/NVIDIA_CUDA-8.0_Samples/1_Utilities/deviceQuery (note: change to your path)
+sudo make
+./deviceQuery
+```
+
+### 2.2 安装cuda
+
+还是参考[这个教程](https://github.com/MinglangQiao/Tools_and_Commands) 安装cudnn5.1，一定要及得按教程里面的sudo ldconfig更新链接
+ 
+ 
+ ## 3 安装opencv3.4.0
+ 
+ 参考[这个教程](https://github.com/MinglangQiao/Tools_and_Commands)的方法2 安装， 即从源码安装，安装完查看opencv版本是否为3.4.0
+ 
+ 
+ 
+
+
+
 
