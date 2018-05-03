@@ -3,7 +3,7 @@
 pip install opencv-python  -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-## 安装和管理多个版本的opencv， 注意cmake的PREFIX
+## 安装和管理多个版本的opencv， 注意cmake的PREFIX决定安装位置
 
 https://blog.csdn.net/qq_29828623/article/details/73556713
 
