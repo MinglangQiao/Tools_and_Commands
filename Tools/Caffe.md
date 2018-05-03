@@ -154,7 +154,16 @@ sudo apt-get install git cmake build-essential
 
 
 5 如果编译都通过了，import caffe的时候报这个错
+
 ```
 ImportError: /home/ml/caffe-master/python/caffe/_caffe.so: undefined symbol: PyCObject_Type
+```
+
+没有现成的方案， 根据[这个](https://stackoverflow.com/questions/29080596/undefined-symbol-when-importing-f2py-module-using-python-3), 猜测应该是编译的地方与python相关的地方出了问题。 然后根据[这个](https://github.com/BVLC/caffe/issues/489),  关掉shell，重新打开， 然后
+
+```
+make clean 
+export CPLUS_INCLUDE_PATH=/usr/include/python3.5
+make all -j8
 ```
 
