@@ -2,6 +2,11 @@
 ```
 pip install opencv-python  -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
+
+## 安装和管理多个版本的opencv， 注意cmake的PREFIX
+
+https://blog.csdn.net/qq_29828623/article/details/73556713
+
 ## 源码安装（验证过，可行）
 首先按照这个安装， 注意opencv的版本，比如darknet需要opencv2.4.x版本，否者会报错
 ```
