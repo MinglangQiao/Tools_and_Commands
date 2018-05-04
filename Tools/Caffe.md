@@ -245,7 +245,7 @@ sudo make
  
  * 首先不要在虚拟环境环境下安装caffe， 反正我是没有试成功
  
- * ananconda3的默认python环境是python3.6, 但为了保险我没用默认的python3.6环境，而是新建了一个python=3.5的环境。如果你在默认环境下python = 3.6配成功了，记得告诉我啊
+ * ananconda3的默认python环境是python3.6, 但为了保险我没用默认的python3.6环境，而是新建了一个python=3.5的环境。如果你在默认环境下python = 3.6配成功了，记得告诉我
  
  
  ## 5 安装caffe
@@ -262,7 +262,8 @@ sudo make
  sudo gedit Makefile.config
  ```
  
- 然后修改一下这些配置， 修改后的Makefile.config 和 Makefile已经上传到[这里]()
+ 然后修改一下这些配置， 修改后的Makefile.config 和 Makefile已经上传到[这里](https://github.com/MinglangQiao/Tools_and_Commands/tree/master/images/Tools/caffe)
+ 
  * 1 USE_CUDNN=1 #去掉前面的注释
  
  * 2 OPENCV_VERSION=3 #去掉前面的注释，我们使用的是opencv3
@@ -403,12 +404,11 @@ python
 import caffe
 
 ```
-或者
-```
-caffe-master/python/python
+如果像下图这样就没啥问题了
+<img src=https://github.com/MinglangQiao/Tools_and_Commands/raw/master/images//Tools/caffe/caffe_final.png width="900" >
 
-import caffe
-```
+
+
 写程序时如果报错没有caffe， 需要在开头加入路径
 ```
 ```
