@@ -232,7 +232,7 @@ sudo make
 ./deviceQuery
 ```
 
-### 2.2 安装cuda
+### 2.2 安装cudnn
 
 还是参考[这个教程](https://github.com/MinglangQiao/Tools_and_Commands) 安装cudnn5.1，一定要记得按教程里面的sudo ldconfig更新链接
  
