@@ -302,7 +302,7 @@ PYTHON_LIBRARIES := boost_python-py35 python3.5m
  ```
   
 这里是查找自己系统的lboost-python对应的版本，我电脑上的是35,所以将 boost_python3改为 boost_python-py35就可以， 如下图所示
-<img src=https://github.com/MinglangQiao/Tools_and_Commands/raw/master/images//Tools/caffe/caffe_boost_python.png width="900" >
+<img src=https://github.com/MinglangQiao/Tools_and_Commands/raw/master/images//Tools/caffe/caffe_boost_python.png width="600" >
 
 
   * 6 INCLUDE_DIRS 和 LIBRARY_DIRS
