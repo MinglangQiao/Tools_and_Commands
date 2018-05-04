@@ -282,8 +282,8 @@ sudo make
 # Verify anaconda location, sometimes it's in root.
 ANACONDA_HOME := $(HOME)/anaconda3/envs/python35
 PYTHON_INCLUDE := $(ANACONDA_HOME)/include \
-		# $(ANACONDA_HOME)/include/python3.5m \
-		# $(ANACONDA_HOME)/lib/python3.5/site-packages/numpy/core/include
+		 $(ANACONDA_HOME)/include/python3.5m \
+		 $(ANACONDA_HOME)/lib/python3.5/site-packages/numpy/core/include
 ```
  
   * 5 PYTHON_LIBRARIES 设置，这里也比较关键
