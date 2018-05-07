@@ -161,6 +161,13 @@ export CPLUS_INCLUDE_PATH=/usr/include/python3.5
 ```
 然后再重新编译
 
+# caffe使用经验
+
+## [网络结构可视化工具](https://blog.csdn.net/10km/article/details/52713027)
+
+http://ethereon.github.io/netscope/#/editor
+
+
 # 注意啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
 ##########################################################################################
                             正儿八经自己配成功了的教程
