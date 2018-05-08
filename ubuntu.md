@@ -108,6 +108,15 @@ windows下这样查看
 ipconfig /all
 ```
 然后
+ubuntu查看网关和DNS
+```
+# 网关
+route -n
+
+#DNS
+cat /etc/resolv.conf
+```
+
 ```
 sudo gedit /etc/network/interfaces
 ```
