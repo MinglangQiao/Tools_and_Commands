@@ -102,12 +102,13 @@ sudo dhclient
 ```
 
 [设置静态ip](http://www.linuxdiyf.com/linux/23952.html), DNS服务器可以在系统设置》》 网络 》》 有线那查看
+首先科普一下[网络配置的四大基本要素： IP + Netmask + Gateway + DNS](https://blog.csdn.net/fool_fool/article/details/8979694)
 
 windows下这样查看
 ```
 ipconfig /all
 ```
-然后
+
 ubuntu查看网关和DNS
 ```
 # 网关
@@ -116,7 +117,7 @@ route -n
 #DNS
 cat /etc/resolv.conf
 ```
-
+然后
 ```
 sudo gedit /etc/network/interfaces
 ```
