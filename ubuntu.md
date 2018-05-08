@@ -104,11 +104,10 @@ sudo dhclient
 [设置静态ip](http://www.linuxdiyf.com/linux/23952.html), DNS服务器可以在系统设置》》 网络 》》 有线那查看
 首先科普一下[网络配置的四大基本要素： IP + Netmask + Gateway + DNS](https://blog.csdn.net/fool_fool/article/details/8979694)
 
-windows下这样查看
+windows下这样查看IP地址和网关地址
 ```
 ipconfig /all
 ```
-
 ubuntu查看网关和DNS
 ```
 # 网关
@@ -121,7 +120,18 @@ cat /etc/resolv.conf
 ```
 sudo gedit /etc/network/interfaces
 ```
-改成这样， gateway是ifconfig后看到的广播地址
+gateway是网关地址，也就是路由器的ip地址，也就是通过windows下的 ipconfig /all或者uubuntu下没乱改前可以通过
+route -n查看到的网关地址， 即192.168.xxx.x
+```
+内核 IP 路由表
+目标            网关            子网掩码        标志  跃点   引用  使用 接口
+0.0.0.0         192.168.xxx.x   0.0.0.0         UG    0      0        0 enp0s31f6
+169.254.0.0     0.0.0.0         255.255.0.0     U     1000   0        0 enp0s31f6
+192.168.226.0   0.0.0.0         255.255.255.0   U     0      0        0 enp0s31f6
+
+```
+
+改成这样
 ```
 auto lo
 iface lo inet loopback
@@ -129,8 +139,9 @@ auto enp0s31f6
 iface enp0s31f6 inet static
 address 192.168.226.xxx
 netmask 255.255.255.0
-gateway 192.168.226.xxx
+gateway 192.168.xxx.x
 dns-nameserver 202.112.128.51
+dns-nameserver 202.112.128.50
 ```
 然后
 ```
@@ -151,6 +162,6 @@ dns=dnsmasq
 [ifupdown]
 managed=true
 ```
-然后重启就可以连有线了
+然后重启， 选择有线连接1（特别是登录校园网很慢时）， 再登录校园网就可以了
 
 2) 选择桌面左上角网络图标那里的WIFI可以上网
