@@ -102,6 +102,7 @@ sudo dhclient
 ```
 
 [设置静态ip](http://www.linuxdiyf.com/linux/23952.html), DNS服务器可以在系统设置》》 网络 》》 有线那查看
+
 windows下这样查看
 ```
 ipconfig /all
@@ -125,4 +126,21 @@ dns-nameserver 202.112.128.51
 ```
 sudo /etc/init.d/networking restart
 ```
-不出意外会发现连不了有线，选择桌面左上角网络图标那里的WIFI可以上网
+不出意外会发现连不了有线：
+
+1）显示灰色的设备未托管
+```
+sudo gedit /etc/NetworkManager/NetworkManager.conf
+```
+修改 managed=true
+```
+[main]
+plugins=ifupdown,keyfile,ofono
+dns=dnsmasq
+
+[ifupdown]
+managed=true
+```
+然后重启就可以连有线了
+
+2) 选择桌面左上角网络图标那里的WIFI可以上网
