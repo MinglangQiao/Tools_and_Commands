@@ -101,8 +101,28 @@ ifconfig
 sudo dhclient
 ```
 
-[设置静态ip](https://blog.csdn.net/xiaohuozi_2016/article/details/54743992), DNS服务器可以在
-windows下执行下列命令，查看。 但是又会导致连不网
+[设置静态ip](http://www.linuxdiyf.com/linux/23952.html), DNS服务器可以在系统设置》》 网络 》》 有线那查看
+windows下这样查看
 ```
 ipconfig /all
 ```
+然后
+```
+sudo gedit /etc/network/interfaces
+```
+改成这样， gateway是ifconfig后看到的广播地址
+```
+auto lo
+iface lo inet loopback
+auto enp0s31f6
+iface enp0s31f6 inet static
+address 192.168.226.xxx
+netmask 255.255.255.0
+gateway 192.168.226.xxx
+dns-nameserver 202.112.128.51
+```
+然后
+```
+sudo /etc/init.d/networking restart
+```
+不出意外会发现连不了有线，选择桌面左上角网络图标那里的WIFI可以上网
