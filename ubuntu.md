@@ -116,6 +116,16 @@ route -n
 #DNS
 cat /etc/resolv.conf
 ```
+如果之前乱改过DNS，修改DNS为默认状态
+```
+sudo gedit /etc/network/interfaces
+```
+改成怎样即可， 只保留默认的，不要乱加其他的
+```
+nameserver 12x.x.1.1
+```
+
+
 然后
 ```
 sudo gedit /etc/network/interfaces
@@ -165,3 +175,4 @@ managed=true
 然后重启， 选择有线连接1（特别是登录校园网很慢时）， 再登录校园网就可以了
 
 2) 选择桌面左上角网络图标那里的WIFI可以上网
+
