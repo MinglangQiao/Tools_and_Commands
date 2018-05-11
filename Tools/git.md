@@ -57,13 +57,33 @@ git log
 ```
 
 
-要重返未来，用：～查看命令历史，以便确定要回到未来的哪个版本。
+要重返未来，用：～查看命令历史，以便确定要回到未来的哪个版本。reflag命令显示整个本地仓储的commit，包括所有branch的commit，甚至包括已经撤销的commit
 ```
 git reflog
 ```
 退出git log 状态按 ： Q
 
+### 关于分支
+[参考资料](https://www.cnblogs.com/utank/p/7880441.html)
 
+* 删除一个非当前所处分支
+```
+git branch -d <branch_name>
+```
+* 强制删除一个正打开的分支
+```
+git branch -D <branch_name>
+```
+* 删除被恢复的分支(Git会自行负责分支的管理，所以当我们删除一个分支时，Git只是删除了指向相关提交的指针，但该提交对象依然会留在版本库中)
+
+如果知道分支的commit id
+```
+git branch <branch_name> <hash_val>
+```
+如果不知道分支的commit id， 用reflog命令将它找出来， 再恢复
+```
+git branch <branch_name> HEAD@{x}
+```
 
 ### 快进式推送(FastForwards)与非快进式推送(NonFastForwards)
 
