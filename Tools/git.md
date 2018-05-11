@@ -57,7 +57,7 @@ git log
 ```
 
 
-要重返未来，用：～查看命令历史，以便确定要回到未来的哪个版本。reflag命令显示整个本地仓储的commit，包括所有branch的commit，甚至包括已经撤销的commit
+要重返未来，用：～查看命令历史，以便确定要回到未来的哪个版本。reflog命令显示整个本地仓储的commit，包括所有branch的commit，甚至包括已经撤销的commit
 ```
 git reflog
 ```
