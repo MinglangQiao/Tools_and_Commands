@@ -27,6 +27,11 @@ whereis python ## 查看python位置
 
 8、[jupyter notebook](http://zhuangzhuang.github.io/2017/01/22/fix-pycharm-jupyter/)
 
+9 [pycharm启动后总是在index很慢，不能运行程序](https://www.zhihu.com/question/47427720/answer/106059581)
+```
+将不想索引的文件夹设置为Excluded Folders即可
+```
+
 ## Debug
 [Debug按钮的用法](https://www.jianshu.com/p/64a45714c58c)
 
