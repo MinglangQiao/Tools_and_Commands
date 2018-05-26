@@ -96,8 +96,9 @@ sudo命令在/usr/bin/下，使用/usr/bin/sudo即可， 然后cp /etc/profile_b
 ifconfig
 ```
 
-如果没有，执行一下命令，应该就有了，然后就能联网了
+如果没有，执行一下命令，应该就有了，然后就能联网了;如果网关/ip这些设置都对但还是不能上网，也执行一下下面的语句
 ```
+# dhclient命令可以释放你的电脑的IP地址并从DHCP服务器上获得一个新的
 sudo dhclient
 ```
 
