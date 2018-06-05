@@ -122,3 +122,6 @@ https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b
 
 git push -u origin master 如果当前分支与多个主机存在追踪关系，则可以使用 -u 参数指定一个默认主机，这样后面就可以不加任何参数使用git push，
 不带任何参数的git push，默认只推送当前分支，这叫做simple方式
+
+## 删除某次commit
+https://www.36nu.com/post/275
