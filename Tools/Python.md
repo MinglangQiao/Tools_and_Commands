@@ -26,3 +26,8 @@ all_data = [line.split() for line in lines]
 ```
 
 3、[__init__.py的作用](https://www.cnblogs.com/AlwinXu/p/5598543.html)
+
+
+
+4 sorted 函数，排序
+http://www.runoob.com/python/python-func-sorted.html
