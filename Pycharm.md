@@ -57,7 +57,7 @@ Root path 是远程服务器的工作路径
 
 [官方教程](https://www.jetbrains.com/help/pycharm/creating-a-remote-server-configuration.html)
 
-### 1. 通过Tools > Deployment > Configuration配置远程主机IP、Rootpath; 然后mapping设置本地文件夹（注意Deploy path on server 这里填写相对于root path的目录， 直接写/即可, 注意两个路径连起来的文件夹要和本地文件夹对应上，绿色的部分表示是同步的）
+### 1. 通过Tools > Deployment > Configuration配置远程主机IP、Rootpath; 然后mapping设置本地文件夹（注意Deploy path on server 这里填写相对于root path的目录，注意两个路径连起来的文件夹要和本地文件夹对应上，绿色的部分表示是同步的）
 
 <img src=https://github.com/MinglangQiao/Tools_and_Scripts/raw/master/images/Tools/pycharm_path.png width="900" >
 
