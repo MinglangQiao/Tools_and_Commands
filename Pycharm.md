@@ -75,5 +75,5 @@ Root path 是远程服务器的工作路径
 首先需要在Tools > Deployment > Mappings > 将对应的server设置为Use this server as default
 https://my.oschina.net/cerise/blog/886282
 
- 
- 
+### 生成和安装requirements.txt
+https://blog.csdn.net/luocheng7430/article/details/80373572
