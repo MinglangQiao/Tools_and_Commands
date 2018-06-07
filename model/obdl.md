@@ -14,4 +14,7 @@ filesep: 用于返回当前平台的目录分隔符，Windows是反斜杠(\)，L
 
 #### 准备mat文件格式
 
+VideoNameList.mat: 包含所有的video_name
+
+每个video的Data.mat： 包含num_frames, fps, w, h
 
