@@ -181,3 +181,8 @@ managed=true
 
 ## 新建账户并添加用户权限
 https://www.linuxidc.com/Linux/2016-06/132218.htm
+
+
+## 关于bash和profile
+
+
