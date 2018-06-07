@@ -115,7 +115,8 @@ ubuntu查看网关和DNS
 route -n
 
 #DNS
-cat /etc/resolv.conf
+通过设置》 网络 》 有线 查看DNS和默认路由
+# cat /etc/resolv.conf
 ```
 如果之前乱改过DNS，修改DNS为默认状态
 ```
