@@ -184,5 +184,4 @@ https://www.linuxidc.com/Linux/2016-06/132218.htm
 
 
 ## 关于bash和profile
-
-
+https://www.cnblogs.com/liaohuiqiang/p/7197581.html?utm_source=itdadao&utm_medium=referral
