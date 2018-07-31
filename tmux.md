@@ -85,8 +85,10 @@ sudo apt-get install tmux
 | ctrl + b  | } | 向后置换当前面板 |
 | ctrl + b  | 方向键 | 选择下一面板 |
 | ctrl + b  | o | 向前置换当前面板 |
+| ctrl + b  | z | 最大化当前面板，再重复一次按键后恢复正常（v1.8版本新增） |
 | ctrl + b  | Alt + 方向键 | 以5个单元格为单位调整当前面板边缘 |
 | ctrl + b  | Ctrl + 方向键 | 以1个单元格为单位调整当前面板边缘 |
+
 
 #### 灵活的配置
 
@@ -113,11 +115,27 @@ sudo apt-get install tmux
    1 restart tmux。
    2 在tmux窗口中，先按下Ctrl+b指令前缀，然后按下系统指令:，进入到命令模式后输入source-file ~/.tmux.conf，回车后生效。
    ```
-   
-   
 
 
-   
-   
+##### 新增面板的快捷指令
+
+绑定两个更常用的指令 -、|
+```
+unbind '"'
+bind - splitw -v -c '#{pane_current_path}' # 垂直方向新增面板，默认进入当前目录
+unbind %
+bind | splitw -h -c '#{pane_current_path}' # 水平方向新增面板，默认进入当前目录
+```
+
+
+ 
+##### 开启鼠标支持
+在配置文件中加入
+```
+set-option -g mouse on # 等同于以上4个指令的效果
+```
+然后使生效
+
+
    
    
