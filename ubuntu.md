@@ -186,3 +186,9 @@ https://www.linuxidc.com/Linux/2016-06/132218.htm
 
 ## 关于bash和profile
 https://www.cnblogs.com/liaohuiqiang/p/7197581.html?utm_source=itdadao&utm_medium=referral
+
+### 可以进入GRUB菜单，但是无法进入登录界面
+  1 进入recover mode, 查看报错信息，google之
+  2 找到一个答案： https://askubuntu.com/questions/885062/root-file-system-requires-manual-fsck/885085
+  3 修复文件系统： sudo fsck -f /dev/sda1， repeat the fsck command if there were errors， 第二次就成功了
+  4 type reboot
