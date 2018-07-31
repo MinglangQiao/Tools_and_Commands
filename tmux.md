@@ -103,11 +103,11 @@ sudo apt-get install tmux
    输入
    ```
    set -g prefix C-a #
-    unbind C-b # C-b即Ctrl+b键，unbind意味着解除绑定
-    bind C-a send-prefix # 绑定Ctrl+a为新的指令前缀
+   unbind C-b # C-b即Ctrl+b键，unbind意味着解除绑定
+   bind C-a send-prefix # 绑定Ctrl+a为新的指令前缀
 
-    # 从tmux v1.6版起，支持设置第二个指令前缀
-    set-option -g prefix2 ` # 设置一个不常用的`键作为指令前缀，按键更快些
+   # 从tmux v1.6版起，支持设置第二个指令前缀
+   set-option -g prefix2 ` # 设置一个不常用的`键作为指令前缀，按键更快些
    
    ```
    使生效，有如下两种方式
