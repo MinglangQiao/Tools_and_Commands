@@ -137,5 +137,6 @@ set-option -g mouse on # 等同于以上4个指令的效果
 然后使生效
 
 
-   
+#### [脚本化启动](http://kumu-linux.github.io/blog/2013/08/06/tmux/)
+
    
