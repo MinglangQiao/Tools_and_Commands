@@ -62,6 +62,8 @@ https://www.cnblogs.com/superxuezhazha/p/6065992.html
 #### 双屏显示， 旋转一个屏幕， 不用每次开机都设置
 ubuntu 》》 系统设置 》》 显示 》》 旋转 
 
+#### [装系统时花屏](https://blog.csdn.net/heroxuetao/article/details/41482511)
+
 xserver每次开机都要重新设置，还是该google直接搜想要的问题， 关键字都打上：
 ubuntu multi screen xserver rotate
 get：https://ubuntuforums.org/showthread.php?t=1835721
