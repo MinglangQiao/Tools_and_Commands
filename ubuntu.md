@@ -195,6 +195,6 @@ https://www.cnblogs.com/liaohuiqiang/p/7197581.html?utm_source=itdadao&utm_mediu
   
   2 找到一个答案： https://askubuntu.com/questions/885062/root-file-system-requires-manual-fsck/885085
   
-  3 修复文件系统： sudo fsck -f /dev/sda1， repeat the fsck command if there were errors， 第二次就成功了
+  3 修复文件系统： sudo fsck -f /dev/sda1， repeat the fsck command if there were errors， 第二次就成功了, 找不到sudo就不加sudo权限
   
   4 type reboot
