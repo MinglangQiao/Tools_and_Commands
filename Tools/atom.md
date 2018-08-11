@@ -11,3 +11,5 @@
 2 highlight-selected
 
 3 Goto Definition
+
+[变量相关](https://www.jianshu.com/p/d81ab5772580)
