@@ -19,3 +19,5 @@
 * [可以添加markdown](https://baijiahao.baidu.com/s?id=1576133398971840&wfr=spider&for=pc)
 
 * [其他编辑器](https://baijiahao.baidu.com/s?id=1578576441866006312&wfr=spider&for=pc)
+
+* [VSCODE中好看的字体](http://www.css88.com/archives/8064)
