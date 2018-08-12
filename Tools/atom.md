@@ -20,4 +20,7 @@
 
 * [其他编辑器](https://baijiahao.baidu.com/s?id=1578576441866006312&wfr=spider&for=pc)
 
+
+### Visual Studio Code
+* [设置主题](https://jingyan.baidu.com/article/b24f6c821ee88f86bee5da52.html)
 * [VSCODE中好看的字体](http://www.css88.com/archives/8064)
