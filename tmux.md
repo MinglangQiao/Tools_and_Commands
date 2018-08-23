@@ -139,4 +139,10 @@ set-option -g mouse on # 等同于以上4个指令的效果
 
 #### [脚本化启动](http://kumu-linux.github.io/blog/2013/08/06/tmux/)
 
-   
+
+## 复制粘贴
+ctrl+a [ 进入复制模式
+按住空格，鼠标选中区域后按 enter
+ctrl+a ] 粘贴
+
+
