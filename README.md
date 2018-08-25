@@ -72,18 +72,17 @@ conda list -n env_name
 # 安装package
 conda install -n python34 numpy
 
-## 把一个conda环境保存并部署到另一台电脑上
-```
-conda env export > environment.yaml 
-conda env create -f environment.yaml
-```
 
  ```
 #### 怎样解决conda和系统环境的opencv问题
 [参考1](https://stackoverflow.com/questions/49195179/how-to-solve-the-conda-virtual-env-and-system-env-conflict-on-import-cv2)
 [在anaconda中安装opencv](https://stackoverflow.com/questions/38787748/installing-opencv-3-1-with-anaconda-python3)
 
-
+## 把一个conda环境保存并部署到另一台电脑上
+```
+conda env export > environment.yaml 
+conda env create -f environment.yaml
+```
 
 ## CUDA
 * [CUDA是什么鬼？](https://baike.baidu.com/item/CUDA/1186262?fr=aladdin)
