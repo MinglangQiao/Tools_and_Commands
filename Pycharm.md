@@ -77,3 +77,8 @@ https://my.oschina.net/cerise/blog/886282
 
 ### 生成和安装requirements.txt
 https://blog.csdn.net/luocheng7430/article/details/80373572
+
+
+## 太卡怎么办
+1 https://confluence.jetbrains.com/pages/viewpage.action?pageId=25788581
+2 http://www.mamicode.com/info-detail-2208329.html
