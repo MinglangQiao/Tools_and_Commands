@@ -9,7 +9,6 @@
  conda deactivate
 ```
 
-
 需要保证添加了cuda路径和安装了cudnn
 
 ```
@@ -421,6 +420,7 @@ import caffe
 
 写程序时如果报错没有caffe， 需要在开头加入路径
 ```
+sys.path.insert(0, ‘caffe_python的路径，比如~/down/caffe/python/')
 ```
 
 
