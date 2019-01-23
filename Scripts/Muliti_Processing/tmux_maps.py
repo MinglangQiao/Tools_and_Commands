@@ -1,4 +1,4 @@
-## this is a demo scripts, print
+## this is a demo scripts, print 0-1000 unsing N tmux windows at the same time
 
 import subprocess
 import argparse
@@ -12,13 +12,13 @@ def parse_args():
 
     parser.add_argument('--cmd', choices=['train', 'test'], default='test')
     parser.add_argument('--workers', default=1, type=int, metavar='N',
-                    help='number of data loading workers (default: 4 )') # Metavar: It provides a different name for optional argument in help messages.
+                        help='number of data loading workers (default: 4 )') # Metavar: It provides a different name for optional argument in help messages.
     parser.add_argument('--start', default=0, type=int, metavar='S',
-                    help='start index of the sequences') # Metavar: It provides a different name for optional argument in help messages
+                        help='start index of the sequences') # Metavar: It provides a different name for optional argument in help messages
     parser.add_argument('--end', default=1, type=int, metavar='E',
-                    help='end index of the sequences') # Metavar: It provides a different name for optional argument in help messages.
+                        help='end index of the sequences') # Metavar: It provides a different name for optional argument in help messages.
     parser.add_argument('--i_worker', default=1, type=int, metavar='i',
-                    help='worker index of the sequences') # Metavar: It provides a different name for optional argument in help messages.
+                        help='worker index of the sequences') # Metavar: It provides a different name for optional argument in help messages.
 
     args = parser.parse_args()
 
