@@ -84,6 +84,8 @@ conda env export > environment.yaml
 conda env create -f environment.yaml
 ```
 
+[在虚拟环境中安装cuda和cudnn](https://blog.csdn.net/weixin_40588315/article/details/85881338)
+
 ## CUDA
 * [CUDA是什么鬼？](https://baike.baidu.com/item/CUDA/1186262?fr=aladdin)
   [PPA是什么鬼？](http://blog.csdn.net/baidu_22502417/article/details/46683549)
