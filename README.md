@@ -178,11 +178,11 @@ first， go to the [official site](https://developer.nvidia.com/cudnn)to downloa
 
 upzip the file, cd进入cudnn解压之后的目录
 ```
-sudo cp cudnn.h ./include/usr/local/cuda-8.0/include/    #复制头文件
+sudo cp ./include/cudnn.h /usr/local/cuda-8.0/include/    #复制头文件
 ```
 cd进入解压后的目录, 对动态文件进行复制和链接：
 ```
-sudo cp -a libcudnn* ./lib64/usr/local/cuda-8.0/lib64/    #复制动态链接库，-a 在保留原文件属性的前提下复制文件
+sudo cp -a ./lib64/libcudnn* /usr/local/cuda-8.0/lib64/    #复制动态链接库，-a 在保留原文件属性的前提下复制文件
 
 ```
 next，
