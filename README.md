@@ -92,6 +92,9 @@ conda env create -f environment.yaml
   [参考教程1](http://blog.csdn.net/autocyz/article/details/52299889/)
   [参考教程2](http://blog.csdn.net/u010837794/article/details/63251725)
   
+ [怎样安装多个版本的cuda和在不同版本间切换](https://blog.csdn.net/ksws0292756/article/details/80120561)
+ 
+方法0(最简单)：采用cuda的.sh安装包
  
 方法1：采用cuda的.deb安装包， 可以同时安装显卡驱动和cuda,而且可以避免 Nouveau (enable/disable)/xserver等问题
 首先去 [cuda8 offical site](https://developer.nvidia.com/cuda-toolkit-archive)下载.deb安装包，然后
