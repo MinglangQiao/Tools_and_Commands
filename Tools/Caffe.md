@@ -395,13 +395,13 @@ make pycaffe -j $(($(nproc) + 1))
 
 * step3 添加环境变量
 ```
-sudo vim ~/.bashrc
+sudo gedit ~/.bashrc
 
 ## 在末尾加入
 export PYTHONPATH=/home/ubuntu/caffe/caffe-master/python:$PYTHONPATH
 
 ## 立即生效
-source ~./bashrc
+source ~/.bashrc
 ```
 
 然后
