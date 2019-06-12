@@ -239,7 +239,7 @@ sudo make
  
  ## 3 安装opencv3.4.0
  
- 参考[这个教程](https://github.com/MinglangQiao/Tools_and_Commands)的方法2 安装， 即从源码安装，安装完查看opencv版本是否为3.4.0
+ 参考[这个教程](https://github.com/MinglangQiao/Tools_and_Commands/blob/master/Tools/Opencv.md)的方法2 安装， 即从源码安装，安装完查看opencv版本是否为3.4.0
  
  ## 4 ananconda3配置
  
