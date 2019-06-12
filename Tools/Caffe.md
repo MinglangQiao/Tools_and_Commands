@@ -174,7 +174,7 @@ http://ethereon.github.io/netscope/#/editor
 #### 配置：
 Ubuntu16.04 + gtx1080ti + cuda8.0 + cudnn5.1 + opencv3.4 + Anaconda3 + python3.5 + caffe
 
-特别鸣谢一下这几个教程，每个教程都不完全正确（for me），但相互补充，要配合着看： 
+参考教程： 
 
  [1 Ubuntu16.04 Caffe 安装步骤记录（超详尽）](https://blog.csdn.net/yhaolpz/article/details/71375762)
  
