@@ -196,14 +196,8 @@ Ubuntu16.04 + gtx1080ti + cuda8.0 + cudnn5.1 + opencv3.4 + Anaconda3 + python3.5
  
  * 5 安装caffe
  
- 安装心得：
  
- * 保证每一步做正确了再做下一步， 如果前面做的不对， 后边可能出现很多意想不到的错误， 错到你怀疑人生
- 
- * 遇到什么错就相应的在百度和google搜索; 如果没有现成的答案， 需要合理的推理和参考， 考虑可能的原因并验证
- 
- * 实在卡在某个地方动不了了不要死磕， 从头在来一遍， 不要怕麻烦
- 
+ * 保证每一步做正确了再做下一步， 如果前面做的不对， 后边可能出现很多意想不到的错误
  ## 1 安装依赖包
  ```
  sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
