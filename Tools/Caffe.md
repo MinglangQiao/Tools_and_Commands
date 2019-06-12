@@ -245,8 +245,7 @@ sudo make
  
  * 首先不要在虚拟环境环境下安装caffe， 反正我是没有试成功
  
- * ananconda3的默认python环境是python3.6, 但为了保险我没用默认的python3.6环境，而是新建了一个python=3.5的环境。如果你在默认环境下python = 3.6配成功了，记得告诉我
- 
+ * ananconda3的默认python环境是python3.6, 但为了保险我没用默认的python3.6环境，而是新建了一个python=3.5的环境。
  
  ## 5 安装caffe
  
