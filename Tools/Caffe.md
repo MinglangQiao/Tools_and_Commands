@@ -184,7 +184,7 @@ Ubuntu16.04 + gtx1080ti + cuda8.0 + cudnn5.1 + opencv3.4 + Anaconda3 + python3.5
  
  [4 ubuntu16.04下，安装caffe+cuda8.0+Anaconda3+cudnn5.1](https://blog.csdn.net/xiongchao99/article/details/79099173)
  
- 分为以下4个大步骤：
+ 分为以下5个大步骤：
  
  * 1 安装依赖包
  
