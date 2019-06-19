@@ -196,7 +196,9 @@ sudo ln -s libcudnn.so.5 libcudnn.so #生成软链接
 
 sudo ldconfig #更新链接
 
-nvcc -V #查看是否安装好了
+#查看是否安装好了
+cat /usr/local/cuda/version.txt
+cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 
 ```
 
