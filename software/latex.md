@@ -87,6 +87,8 @@
 
 ![不正常字体表格](./latex_gram_img/latex_table_font_unnormal.jpg)
 
+需要控制表格宽度，但是会导致左对齐
 
+需要添加宏包：\usepackage{array}， 然后使用：<{\centering}，而且我发现字体的大小跟表格的宽度有关系，宽度设的越小，字体会越大
 
 
