@@ -171,6 +171,9 @@ and see
 
 <img src=https://github.com/MinglangQiao/Tools_and_Scripts/raw/master/images/Environment/install_cuda_succeed.png width="900" >
 
+### 2020.01.05 更新软件
+[安装多个版本cuda](https://blog.csdn.net/qq_23996885/article/details/90205937)
+
 ## install cuDNN
 first， go to the [official site](https://developer.nvidia.com/cudnn)to download the cudnn, register required
 
