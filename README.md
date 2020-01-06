@@ -171,8 +171,12 @@ and see
 
 <img src=https://github.com/MinglangQiao/Tools_and_Scripts/raw/master/images/Environment/install_cuda_succeed.png width="900" >
 
-### 2020.01.05 更新软件
+### 2020.01.05 更新
+
 [安装多个版本cuda](https://blog.csdn.net/qq_23996885/article/details/90205937)
+
+如果已经安装了cuda10，先卸载掉再安装cuda8. 参考[这里](https://blog.csdn.net/weixin_44100850/article/details/99684058)卸载cuda10
+
 
 ## install cuDNN
 first， go to the [official site](https://developer.nvidia.com/cudnn)to download the cudnn, register required
