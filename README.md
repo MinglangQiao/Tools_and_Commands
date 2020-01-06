@@ -192,7 +192,12 @@ sudo bash cuda_8.0.61.2_linux.run
 ```
 Installation directory '/usr/local/cuda-8.0' does not have a version.txt file!
 ```
-说明安装的是补丁，而不是主文件
+说明安装的是补丁，而不是主文件，安装主程序的.sh文件，然后又出现这个错
+```
+ERROR: An NVIDIA kernel module 'nvidia-drm' appears to already be loaded in
+ your kernel.
+```
+然后参考[这里解决](https://blog.csdn.net/xcls2010/article/details/89641853)
 
 
 
