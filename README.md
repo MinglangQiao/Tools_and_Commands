@@ -176,6 +176,24 @@ and see
 [安装多个版本cuda](https://blog.csdn.net/qq_23996885/article/details/90205937)
 
 如果已经安装了cuda10，先卸载掉再安装cuda8. 参考[这里](https://blog.csdn.net/weixin_44100850/article/details/99684058)卸载cuda10
+用sh文件安装时如果不成功
+```
+Driver:   Not Selected
+Toolkit:  Installation Failed
+Samples:  Not Selected
+
+Logfile is /tmp/cuda_install_5712.log
+```
+然后
+```
+sudo bash cuda_8.0.61.2_linux.run
+```
+然后出现这个
+```
+Installation directory '/usr/local/cuda-8.0' does not have a version.txt file!
+```
+说明安装的是补丁，而不是主文件
+
 
 
 ## install cuDNN
