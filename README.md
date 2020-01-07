@@ -197,7 +197,10 @@ Installation directory '/usr/local/cuda-8.0' does not have a version.txt file!
 ERROR: An NVIDIA kernel module 'nvidia-drm' appears to already be loaded in
  your kernel.
 ```
-然后参考[这里解决](https://blog.csdn.net/xcls2010/article/details/89641853)
+参看是否安装好了
+```
+cat /usr/lcoal/cuda/version.txt
+```
 
 
 
